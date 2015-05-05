@@ -10,10 +10,17 @@ Installer gulp de manière globale pour avoir le raccourcis global 'gulp'
 npm install -g gulp
 ```
 
-Installer les dépendance normale et de développement
+Installer les dépendances normale et de développement
 
 ```
+npm install
 npm install --dev
+```
+
+Compilre les css avec gup
+
+```
+gulp
 ```
 
 ! Démarrage

@@ -9,9 +9,11 @@ var config = {
 
 // scss link
 gulp.task('scss',function(){
-	return gulp.src('./client/sass/app.scss')
+	return gulp.src('./client/sass/styles.scss')
 	.pipe(sass({
-		includePaths:[config.bootstrapDir+ '/assets/stylesheets']
+		includePaths:[config.bootstrapDir+ '/assets/stylesheets'],
+		indentSynthax:true,
+		errLogToConsole:true
 	})).pipe(
 		gulp.dest(config.publicDir+'/css')
 	);
