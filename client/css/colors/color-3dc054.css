@@ -1,0 +1,887 @@
+.primary-color,
+.text-primary {
+  color: #3dc054 !important;
+}
+.primary-color:hover,
+.text-primary:hover {
+  color: #3dc054 !important;
+}
+a,
+a:hover,
+a:focus {
+  color: #3dc054;
+}
+ul.featured-list li:before {
+  color: #3dc054;
+}
+.header-toolbar a:hover {
+  color: #3dc054 !important;
+}
+.header-toolbar .social-bar a:hover {
+  color: #3dc054;
+}
+.header-toolbar .tools li ul li a:hover {
+  color: #3dc054 !important;
+}
+.header-toolbar .tools li:hover a {
+  color: #3dc054;
+}
+.header-toolbar .tools li:hover a i {
+  color: #3dc054;
+}
+.header .search i:hover {
+  color: #3dc054;
+}
+.header .tools a:hover,
+.header .tools a:focus {
+  color: #3dc054;
+}
+.header .tools .signup:hover {
+  background: #3dc054;
+}
+.header .tools .user:hover > a {
+  color: #3dc054;
+}
+.header .tools .cart-btn:hover .link {
+  color: #3dc054;
+}
+.header .tools .cart-btn:hover .link:before {
+  color: #3dc054;
+}
+.header .user:hover > a {
+  color: #3dc054;
+}
+.header .cart-btn .cart-dropdown .owl-prev div,
+.header .cart-btn .cart-dropdown .owl-next div {
+  background: #3dc054 !important;
+}
+.header .cart-btn .cart-dropdown .item .delete:hover {
+  background: #3dc054 !important;
+}
+.header .cart-btn .cart-dropdown .item a .overlay,
+.header .cart-btn .cart-dropdown .item .qnt-count .incr-btn:hover {
+  background: #3dc054 !important;
+}
+.header .cart-btn .cart-dropdown .item .qnt-count .incr-btn.inactive:hover {
+  background: #e7ecee !important;
+}
+.header .quick-search {
+  border-bottom: 1px solid #37ad4c;
+}
+.header .quick-search .overlay {
+  background: #3dc054;
+}
+.header .quick-search .search-field:focus::-moz-placeholder {
+  color: #3dc054;
+  opacity: 1;
+}
+.header .quick-search .search-field:focus:-ms-input-placeholder {
+  color: #3dc054;
+}
+.header .quick-search .search-field:focus::-webkit-input-placeholder {
+  color: #3dc054;
+}
+.header.transparent.opaque .inner .tools a:hover,
+.header.transparent.opaque .inner .tools a:focus {
+  color: #3dc054;
+}
+.header.transparent.opaque .inner .tools .signup:hover {
+  background: #3dc054;
+}
+.no-svg .header .tools .cart-btn {
+  background: url(../../img/cart-btn/png/cart-btn-448956.png) 0px 0px no-repeat !important;
+}
+.header.transparent.opaque .inner .tools .btn-transparent:hover {
+  color: #3dc054 !important;
+  border-color: #3dc054;
+}
+.menu ul li a:hover,
+.menu ul li a:focus {
+  color: #3dc054;
+}
+.menu ul li.active a,
+.menu ul li:hover a,
+.menu ul li:focus a {
+  color: #3dc054;
+}
+.menu ul li .submenu li:hover a,
+.menu ul li .submenu li.active a,
+.menu ul li .submenu li:focus a,
+.menu ul li .submenu li a i {
+  color: #3dc054;
+}
+.menu ul li .submenu li .sub-submenu li a:hover,
+.menu ul li .submenu li .sub-submenu li.active a {
+  color: #3dc054;
+}
+.transparent.opaque li:hover a,
+.transparent.opaque li.active a {
+  color: #3dc054;
+}
+.scroller .menu li a:after {
+  background: #3dc054;
+}
+.mega-menu a:hover {
+  border-bottom-color: #3dc054;
+}
+.mega-menu ul li.active a {
+  color: #3dc054 !important;
+}
+.mega-menu ul li a:hover {
+  color: #3dc054 !important;
+}
+.mega-menu .img-link:hover,
+.mega-menu img-link.active {
+  color: #3dc054 !important;
+}
+#nav-toggle:hover span,
+#nav-toggle:hover span:before,
+#nav-toggle:hover span:after {
+  background: #3dc054;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active:hover span:before,
+#nav-toggle.active:hover span:after {
+  background: #3dc054;
+}
+.mobile-navi .mobile-search button[type=submit]:hover i {
+  color: #3dc054;
+}
+.mobile-navi a:hover,
+.mobile-navi a:focus {
+  color: #3dc054;
+}
+.mobile-navi ul li.current a {
+  color: #3dc054;
+}
+.mobile-navi ul li span:hover {
+  color: #3dc054;
+}
+.mobile-navi ul li ul.submenu li a:hover,
+.mobile-navi ul li ul.submenu li a:focus {
+  color: #3dc054;
+}
+.mobile-navi ul li ul.submenu li.current a {
+  color: #3dc054;
+}
+.mobile-navi ul li ul.submenu li ul.sub-submenu li a:hover,
+.mobile-navi ul li ul.submenu li ul.sub-submenu li a:focus {
+  color: #3dc054;
+}
+.mobile-navi ul li ul.submenu li ul.sub-submenu li.current a {
+  color: #3dc054;
+}
+.btn-primary {
+  background: #3dc054;
+}
+.btn-primary:hover {
+  background: #319943;
+}
+.btn-transparent {
+  background: rgba(255, 255, 255, 0.2);
+}
+.btn-transparent:hover {
+  background: #fff;
+}
+.btn-transparent:hover.btn-primary {
+  color: #3dc054 !important;
+}
+.no-rgba .btn-transparent {
+  background: #fff;
+}
+.no-rgba .btn-transparent.btn-primary {
+  color: #3dc054 !important;
+}
+.btn-outlined.btn-primary {
+  background: transparent;
+  border-color: #3dc054 !important;
+  color: #3dc054 !important;
+}
+.btn-outlined.btn-primary:hover {
+  background: #3dc054;
+}
+.submit-with-price {
+  background: #3dc054;
+}
+.submit-with-price:hover {
+  background: #319943;
+}
+.checkbox .iradio.checked,
+.radio .iradio.checked {
+  border-color: #3dc054;
+}
+.checkbox .iradio.checked:after,
+.radio .iradio.checked:after {
+  background: #3dc054;
+}
+.checkbox .icheckbox.checked,
+.radio .icheckbox.checked {
+  border-color: #3dc054;
+}
+.checkbox .icheckbox.checked:after,
+.radio .icheckbox.checked:after {
+  color: #3dc054;
+}
+.light-version .submit-with-price:hover {
+  color: #3dc054;
+}
+.form-3d .datePicker .datepicker .fa:hover {
+  color: #3dc054 !important;
+  border-color: #3dc054 !important;
+}
+.form-control {
+  border-color: #3dc054;
+}
+.form-control:focus {
+  box-shadow: 0 0 5px 0px #3dc054;
+  border-color: #3dc054;
+}
+.modal-header a {
+  border-bottom-color: transparent;
+}
+.modal-header a:hover {
+  color: #319943;
+  border-bottom-color: #319943;
+}
+.modal-header .close {
+  color: #3dc054;
+}
+.share-modal .modal-content .bar.mail {
+  background: #3dc054;
+}
+.hero-static.fullscreen .overlay-block .opacity-70 {
+  background: rgba(61, 192, 84, 0.7);
+}
+.hero-static.fullscreen .overlay-block .opacity-70 {
+  background: rgba(61, 192, 84, 0.7);
+}
+.hero-static.fullscreen .overlay-block .opacity-97 {
+  background: rgba(61, 192, 84, 0.97);
+}
+.hero-static.fullscreen .overlay-block #slide-up-toggle {
+  background: #3dc054;
+}
+.fp-banner .meta a,
+.fw-img-banner .meta a {
+  color: #4fc764;
+}
+.fp-banner .meta a:hover,
+.fw-img-banner .meta a:hover {
+  border-bottom-color: #3dc054;
+}
+.category-bars a .overlay {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.category-tiles .category:hover .overlay {
+  background: #3dc054;
+}
+.recent-post h3 a:hover,
+.blog .list-view .post h3 a:hover,
+.search-results .post h3 a:hover,
+.recent-post h4 a:hover,
+.blog .list-view .post h4 a:hover,
+.search-results .post h4 a:hover,
+.recent-post h5 a:hover,
+.blog .list-view .post h5 a:hover,
+.search-results .post h5 a:hover {
+  color: #3dc054;
+}
+.recent-post .meta a:hover,
+.blog .list-view .post .meta a:hover,
+.search-results .post .meta a:hover {
+  color: #3dc054;
+  border-color: #3dc054;
+}
+.blog .grid-view .post .featured-img .meta,
+.search-results .grid-view .post .featured-img .meta {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.blog .grid-view .post h3 a:hover,
+.search-results .grid-view .post h3 a:hover {
+  color: #3dc054;
+}
+.blog .grid-view .post .taxonomy a:hover,
+.search-results .grid-view .post .taxonomy a:hover {
+  color: #3dc054;
+  border-color: #3dc054;
+}
+.post-controls .next-post:hover,
+.post-controls .prev-post:hover {
+  color: #319943;
+}
+.post-meta .taxonomy a:hover {
+  border-color: #3dc054;
+}
+.post-meta .post-toolbox .buttons a:hover {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.archive-list li a:hover {
+  color: #319943;
+}
+.fw-grid-gallery .fw-block-3 a {
+  background-color: #3dc054;
+}
+.catalog-grid .badge.sale {
+  background: #3dc054;
+}
+.catalog-grid .item .share-opts a.mail {
+  background: #3dc054;
+}
+.catalog-grid .item .share-opts a.mail:hover {
+  background: #319943;
+}
+.catalog-grid .item footer .tools a:hover,
+.catalog-grid .item footer .tools a.share-btn.active {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.catalog-grid .item footer .tools a.add-cart {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.catalog-grid .item footer .tools a.add-cart:hover {
+  background: #319943;
+}
+.catalog-grid.type-1 .item footer p {
+  color: #3dc054;
+}
+.catalog-list .item h3 a:hover {
+  color: #3dc054;
+}
+.catalog-list .item footer .tools a:hover,
+.catalog-list .item footer .tools a.share-btn.active {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.catalog-list .item footer .tools a.add-cart {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.catalog-list .item footer .tools a.add-cart:hover {
+  background: #319943;
+}
+.shopping-cart .item .details a:hover {
+  color: #3dc054;
+}
+.shopping-cart .qnt-count .incr-btn:hover {
+  background: #3dc054;
+}
+.shopping-cart .qnt-count .incr-btn.inactive:hover {
+  background: #e7ecee;
+}
+.size-switcher .iradio.checked {
+  background: #3dc054;
+  border-color: #3dc054;
+}
+.sp-tools .qnt-count .incr-btn:hover {
+  background: #3dc054;
+}
+.sp-tools .qnt-count .incr-btn.inactive:hover {
+  background: #e7ecee;
+}
+.info-tile-radio .tile label span.pricing {
+  color: #3dc054;
+}
+.info-tile-radio .tile .iradio.checked {
+  border-color: #3dc054;
+}
+.tracking-timeline .timeline .checkpoint span.active {
+  background: #3dc054;
+}
+.tracking-timeline .timeline .checkpoint.active {
+  background: #3dc054;
+}
+.deliv-method .icon:before {
+  color: #3dc054;
+}
+.shop-history .panel-group .panel .panel-heading .panel-title h3 a:hover {
+  color: #3dc054;
+}
+.shop-history .panel-group .panel .panel-heading .badge.primary {
+  background: #3dc054;
+}
+.pricing-plan.type-1 .price-title,
+.pricing-plan.type-2 .price-title,
+.pricing-plan.type-3 .price-title {
+  background-color: #3dc054;
+}
+.pricing-plan.type-1 h5,
+.pricing-plan.type-2 .pricing-content li b,
+.pricing-plan.type-3 h3,
+.pricing-plan.type-3 .pricing-content li b {
+  color: #3dc054;
+}
+.pricing-plan.type-3 {
+  border-color: #3dc054;
+}
+.specialty-page .error-numb {
+  color: #3dc054;
+}
+.sp-form button[type=submit]:hover i {
+  color: #3dc054;
+}
+.big-links li a span {
+  color: #3dc054;
+}
+.big-links li a:hover {
+  color: #3dc054;
+}
+.team-member .img .social-strip {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.team-member .social-icons a {
+  background: #3dc054;
+}
+.team-member .social-icons a:hover {
+  background: #319943;
+}
+.team-member-img .social {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.user-account label span {
+  color: #3dc054;
+}
+.account-settings .pass-block.expanded {
+  background: #3dc054;
+}
+.account-settings .pass-block.expanded .close:hover {
+  color: #3dc054;
+}
+.account-settings .user-avatar .upload {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.account-settings .user-avatar .delete:hover {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.8);
+}
+.schedule .event {
+  background: #3dc054;
+}
+.schedule .event::before {
+  background: #3dc054;
+}
+.schedule .event:hover,
+.schedule .event:focus {
+  color: #3dc054;
+}
+.coming-soon-tile {
+  background: #3dc054;
+}
+.post-toolbox .buttons a:hover {
+  background-color: #3dc054;
+  border-color: #3dc054;
+}
+.sidebar .widget.featured-posts .post h4 a:hover,
+.sidebar .widget.featured-posts .post h5 a:hover {
+  color: #3dc054;
+}
+.sidebar .widget.featured-posts .post .meta a:hover {
+  color: #3dc054;
+  border-bottom-color: #3dc054;
+}
+.sidebar .widget.categories .category .cat-text h4 a:hover {
+  color: #3dc054;
+}
+.sidebar .widget.search form button[type=submit]:hover i {
+  color: #3dc054;
+}
+.sidebar .widget.subscribe form button[type=submit] {
+  background: #3dc054;
+}
+.sidebar .widget.subscribe form button[type=submit]:hover {
+  background: #319943;
+}
+.sidebar .widget.shop-categories a:hover,
+.sidebar .widget.shop-links a:hover {
+  color: #3dc054;
+}
+.sidebar .widget.shop-categories .all a,
+.sidebar .widget.shop-links .all a {
+  color: #3dc054;
+}
+.sidebar .widget.shop-categories .all a:hover,
+.sidebar .widget.shop-links .all a:hover {
+  border-color: #3dc054;
+}
+.sidebar .widget.shop-filters .clear {
+  color: #3dc054;
+}
+.sidebar .widget.shop-filters .clear:hover {
+  border-bottom-color: #3dc054;
+}
+.sidebar .widget.cart-content .item h4 a:hover {
+  color: #3dc054;
+}
+.sidebar .widget.cart-content .item .price span {
+  color: #3dc054;
+}
+.sidebar .widget.cart-content .item .qnt-count .incr-btn:hover {
+  background: #3dc054;
+}
+.sidebar-button {
+  background: #3dc054;
+}
+.sidebar-button:hover {
+  background: #319943;
+}
+.sidebar .widget.rposts .rpost .rpost-text h4 a {
+  color: #3dc054;
+}
+.ms-staff-carousel .ms-staff-info .ms-socials a {
+  background: #3dc054;
+}
+.ms-staff-carousel .ms-staff-info .ms-socials a:hover {
+  background: #319943;
+}
+.ms-skin-default .ms-caption {
+  background: #3dc054;
+  background: rgba(61, 192, 84, 0.75);
+}
+.ms-showcase .ms-layer.product-price {
+  color: #3dc054;
+}
+.package-carousel .owl-prev div,
+.package-carousel .owl-next div {
+  background: #3dc054;
+}
+.nav-tabs li a span {
+  color: #3dc054;
+}
+.nav-tabs.vertical li a:after {
+  background: #3dc054;
+}
+.nav-tabs.vertical li a:hover {
+  color: #3dc054;
+}
+.nav-tabs.vertical li.active a,
+.nav-tabs.vertical li.active a:hover,
+.nav-tabs.vertical li.active a:focus {
+  color: #3dc054 !important;
+}
+.panel .panel-heading a:hover {
+  color: #3dc054;
+}
+.panel-primary .panel-heading {
+  background: #3dc054;
+  border-bottom-color: #3dc054;
+}
+.info-box.primary {
+  background: #3dc054;
+}
+.info-string {
+  background: #3dc054;
+}
+.pricing-plan.type-2.active {
+  border-color: #3dc054;
+}
+.pricing-plan.type-2.active header {
+  background: #3dc054;
+}
+.harmonic .item .image {
+  border-color: #3dc054;
+}
+.filters li:hover a {
+  color: #3dc054;
+}
+.filters li.current a {
+  background-color: #3dc054;
+  color: #fff;
+}
+.gallery-grid.masonry .item {
+  background: #3dc054;
+}
+.gallery-grid.masonry .item figure.effect-02 {
+  background: #3dc054;
+  background: -webkit-linear-gradient(top, #3dc054 0%, rgba(255, 255, 255, 0.4) 100%);
+  background: linear-gradient(to bottom, #3dc054 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+.countdown span {
+  color: #3dc054;
+}
+.tile-btn .inner {
+  border-color: #3dc054;
+}
+.tile-btn:after {
+  background: #3dc054;
+}
+.image-3d.primary:after,
+.thumbnail-3d.primary:after {
+  background: #3dc054;
+}
+.image-3d.primary img,
+.thumbnail-3d.primary img {
+  border-color: #3dc054;
+}
+.thumbnail-zoom .overlay,
+.thumbnail-link .overlay {
+  background: #3dc054;
+}
+.toolbox .heading .back-btn:hover {
+  background: #3dc054;
+}
+.toolbox .layout-view a.grid.active span:before,
+.toolbox .layout-view a.grid:hover span:before,
+.toolbox .layout-view a.grid.active span:after,
+.toolbox .layout-view a.grid:hover span:after {
+  background: #3dc054;
+}
+.toolbox .layout-view a.list.active span:before,
+.toolbox .layout-view a.list:hover span:before,
+.toolbox .layout-view a.list.active span:after,
+.toolbox .layout-view a.list:hover span:after {
+  background: #3dc054;
+}
+.breadcrumb li a:hover {
+  border-bottom-color: #3dc054;
+}
+.sorting .sort li a:hover {
+  color: #3dc054;
+}
+.sorting .sort li.active a {
+  color: #3dc054;
+}
+.pagination li.active a {
+  background: #3dc054;
+  color: #fff !important;
+}
+.datepicker .prev:hover,
+.datepicker .next:hover {
+  color: #3dc054;
+}
+.datepicker table tr td.selected,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled:hover {
+  background-color: #3dc054;
+}
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.today {
+  background-color: #3dc054;
+}
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active {
+  background-color: #3dc054;
+}
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+  background-color: #3dc054;
+}
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled],
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active {
+  background-color: #3dc054;
+}
+.datepicker th.datepicker-switch:hover {
+  color: #3dc054;
+}
+.datepicker thead tr:last-child,
+.datepicker tbody tr {
+  border-bottom-color: #3dc054;
+}
+.info-block .close:hover {
+  background: #3dc054;
+}
+.icon-block a:hover {
+  color: #3dc054;
+}
+.featured-icon.icon-alt.rounded.primary {
+  background: #3dc054;
+}
+.featured-icon.icon-alt.circle.primary {
+  background: #3dc054;
+}
+.sticky-btns span {
+  background: #3dc054;
+}
+.sticky-btns span:hover {
+  background: #319943;
+}
+.noUi-connect {
+  background: #3dc054;
+}
+.ih-item.circle .img:before {
+  box-shadow: inset 0 0 0 16px rgba(61, 192, 84, 0.5), 0 1px 2px rgba(61, 192, 84, 0.3);
+}
+.footer .featured-post h4 a:hover,
+.footer .category h4 a:hover,
+.footer .contacts h4 a:hover,
+.footer .featured-post h5 a:hover,
+.footer .category h5 a:hover,
+.footer .contacts h5 a:hover {
+  color: #3dc054;
+  border-bottom-color: #3dc054;
+}
+.footer .featured-post .meta a:hover,
+.footer .category .meta a:hover,
+.footer .contacts .meta a:hover {
+  color: #3dc054;
+  border-bottom-color: #3dc054;
+}
+.footer .contacts .social-bar a:hover {
+  color: #319943;
+}
+.footer .subscribe form button[type=submit] {
+  background: #3dc054;
+}
+.footer .subscribe form button[type=submit]:hover {
+  background: #319943;
+}
+.footer .copyright p a:hover {
+  color: #3dc054;
+  border-bottom: 1px solid #3dc054;
+}
+.footer .footer-subscribe-widget {
+  background-color: #3dc054;
+}
+.footer .copyright {
+  background-color: #3dc054;
+}
+.footer h3 {
+  color: #3dc054;
+}
+.footer .featured-post h5 a,
+.footer .footer .features h5 a,
+.footer .footer .contacts h5 a {
+  color: #3dc054;
+}
+.footer .footer-subscribe-widget .btn {
+  background-color: #3dc054;
+}
+.footer .footer-subscribe-widget .btn:hover {
+  border-color: #3dc054;
+  background-color: #fff;
+}
+.icon-apple:after,
+.icon-auto-washing:after,
+.icon-bag:after,
+.icon-browser:after,
+.icon-chart:after,
+.icon-church:after,
+.icon-ufo:after,
+.icon-comments:after,
+.icon-constellation:after,
+.icon-dental:after,
+.icon-dollar:after,
+.icon-equalizer:after,
+.icon-headphones-2:after,
+.icon-iron-1:after,
+.icon-iron-2:after,
+.icon-iron-3:after,
+.icon-like:after,
+.icon-map:after,
+.icon-money:after,
+.icon-moon:after,
+.icon-no-handwashing:after,
+.icon-no-spin:after,
+.icon-notebook:after,
+.icon-office:after,
+.icon-piano:after,
+.icon-rocket:after,
+.icon-scale-1:after,
+.icon-scale-2:after,
+.icon-search:after,
+.icon-spatula:after,
+.icon-telescope:after,
+.icon-tooth:after,
+.icon-tree:after {
+  color: #3dc054;
+}
+.icon-camera:before,
+.icon-capitol:before,
+.icon-cassete:before,
+.icon-globe:before,
+.icon-hammer:before,
+.icon-handwashing:before,
+.icon-headphones-1:before,
+.icon-holder:before,
+.icon-house:before,
+.icon-ipad:before,
+.icon-lamp:before,
+.icon-lens:before,
+.icon-music:before,
+.icon-phone:before,
+.icon-roller:before,
+.icon-rover:before,
+.icon-space-helmet:before,
+.icon-university-hat:before,
+.icon-window:before {
+  color: #3dc054;
+}
+.progress,
+.counters-v3 .group {
+  border-color: #3dc054;
+}
+.counters-v3 .group,
+.progress.inverted .progress-bar {
+  color: #3dc054;
+}
+.progress-bar,
+.progress.inverted,
+.counters-v1 .group,
+.counters-v2 .group {
+  background-color: #3dc054;
+}

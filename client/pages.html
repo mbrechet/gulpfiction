@@ -1,0 +1,1368 @@
+<!doctype html>
+<!--Conditionals for IE8-9 Support-->
+<!--[if IE]><html lang="en" class="ie"><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Kedavra - Multipurpose HTML5 Template</title>
+    
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Responsive Multipurpose HTML5 Template" />
+		<meta name="keywords" content="responsive html5 template, multipurpose, blog, portfolio, e-commerce, bootstrap 3, css, jquery, flat, modern" />
+		<meta name="author" content="8Guild" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Master Slider Styles-->
+    <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+    <!--Kedavra Stylesheet-->
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <!--Kedavra Color Scheme-->
+    <link class="color-scheme" href="css/colors/color-2f8cea.css" rel="stylesheet" media="screen">
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+    <!--Modernizr-->
+		<script src="js/libs/modernizr.custom.js"></script>
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+      <script src="js/plugins/respond.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <!--Body--> 
+  <body class="parallax animated fadeIn"><!--Add "parallax" class if you have elements on the page with parallax backgrounds. "fadeIn" class makes content fades in on loading-->
+  	
+    <!--Off-Canvas-->
+    <div class="off-canvas-wrap" data-offcanvas>
+    	<div class="inner-wrap">
+      
+      	<!--Off-Canvas Menu-->
+        <aside class="left-off-canvas-menu">
+        	<div class="mobile-navi">
+          	<form method="get" class="mobile-search">
+              <label class="sr-only" for="m-search"></label>
+            	<input class="form-control input-lg" name="m-search" id="m-search" type="text" placeholder="Search">
+              <button type="submit"><i class="flaticon-search100"></i></button>
+            </form>
+            <ul class="buttons">
+            	<li class="lang"><a href="#">Eng<i></i></a>
+              	<ul class="submenu">
+              		<li><a href="#">Deu</a></li>
+              		<li><a href="#">Esp</a></li>
+              		<li><a href="#">Jpn</a></li>
+              	</ul>
+              </li>
+              <li class="currency"><a href="#">$ Usd<i></i></a>
+              	<ul class="submenu">
+              		<li><a href="#">&euro; Eur</a></li>
+              		<li><a href="#">&pound; Gbp</a></li>
+              		<li><a href="#">&yen; Yen</a></li>
+              	</ul>
+              </li>
+            </ul>
+            <ul class="buttons">
+            	<li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+            <ul>
+            	<li class="current"><a href="index.html">Home</a><span></span>
+              	<ul class="submenu">
+              		<li><a href="home-business-law.html">Home Business</a><span></span>
+                  	<ul class="sub-submenu">
+                  		<li><a href="home-business-law.html">Lawyer Services</a></li>
+                  		<li><a href="home-business-real-estate.html">Real Estate</a></li>
+                  	</ul>
+                  </li>
+              		<li><a href="home-portfolio-photographer.html">Home Portfolio</a><span></span>
+                  	<ul class="sub-submenu">
+                  		<li><a href="home-portfolio-photographer.html">Photographer</a></li>
+                  		<li><a href="home-portfolio-musician.html">Musician</a></li>
+                  	</ul>
+                  </li>
+              		<li><a href="home-blog-corporate.html">Home Blog</a><span></span>
+                  	<ul class="sub-submenu">
+                  		<li><a href="home-blog-personal.html">Personal Blog</a></li>
+                  		<li><a href="home-blog-corporate.html">Corporate Blog</a></li>
+                  	</ul>
+                  </li>
+              		<li><a href="home-shop-catalog.html">Home E-Commerce</a><span></span>
+                  	<ul class="sub-submenu">
+                      <li><a href="home-shop-catalog.html">Home Catalog</a></li>
+                      <li><a href="home-shop-featured-product.html">Featured Product</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="home-events.html">Home Events</a></li>
+              		<li><a href="home-startup.html">Home Startup</a></li>
+              		<li><a href="home-landing.html">Home Landing</a></li>
+                  <li><a href="home-services.html">Home Services</a></li>
+              	</ul>
+              </li>
+            	<li><a href="blog-grid-sr.html">Blog</a><span></span>
+              	<ul class="submenu">
+              		<li><a href="blog-grid-sr.html">Grid Layout</a><span></span>
+                  	<ul class="sub-submenu">
+                      <li><a href="blog-grid-fw.html">Grid Full Width</a></li>
+                      <li><a href="blog-grid-sr.html">Grid Sidebar Right</a></li>
+                      <li><a href="blog-grid-sl.html">Grid Sidebar Left</a></li>
+                  	</ul>
+                  </li>
+              		<li><a href="blog-list-sr.html">List Layout</a><span></span>
+                  	<ul class="sub-submenu">
+                      <li><a href="blog-list-fw.html">List Full Width</a></li>
+                      <li><a href="blog-list-2cols.html">List 2 Columns</a></li>
+                      <li><a href="blog-list-sr.html">List Sidebar Right</a></li>
+                      <li><a href="blog-list-sl.html">List Sidebar Left</a></li>
+                  	</ul>
+                  </li>
+              		<li><a href="blog-single-slider.html">Single Post</a><span></span>
+                  	<ul class="sub-submenu">
+                      <li><a href="blog-single-image.html">Image Post</a></li>
+                      <li><a href="blog-single-banner.html">Fullwidth Banner</a></li>
+                      <li><a href="blog-single-gallery.html">Gallery Post</a></li>
+                      <li><a href="blog-single-slider.html">Slider Post</a></li>
+                      <li><a href="blog-single-video.html">Video Post</a></li>
+                      <li><a href="blog-single-audio.html">Audio Post</a></li>
+                  	</ul>
+                  </li>
+              	</ul>
+              </li>
+            	<li><a href="shop-grid-1-big-banner.html">Shop</a><span></span>
+                <ul class="submenu">
+                  <li><a href="shop-grid-1-big-banner.html">Grid Layout Type 1</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="shop-grid-1-fw.html">Grid Full Width</a></li>
+                      <li><a href="shop-grid-1-big-banner.html">Grid Big Banner</a></li>
+                      <li><a href="shop-grid-1-sl.html">Grid Sidebar Left</a></li>
+                      <li><a href="shop-grid-1-sr.html">Grid Sidebar Right</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shop-grid-2-big-banner.html">Grid Layout Type 2</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="shop-grid-2-fw.html">Grid Full Width</a></li>
+                      <li><a href="shop-grid-2-big-banner.html">Grid Big Banner</a></li>
+                      <li><a href="shop-grid-2-sl.html">Grid Sidebar Left</a></li>
+                      <li><a href="shop-grid-2-sr.html">Grid Sidebar Right</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shop-list-big-banner.html">List Layout</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="shop-list-fw.html">List Full Width</a></li>
+                      <li><a href="shop-list-big-banner.html">List Big Banner</a></li>
+                      <li><a href="shop-list-sl.html">List Sidebar Left</a></li>
+                      <li><a href="shop-list-sr.html">List Sidebar Right</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shop-single-dr.html">Single Product</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="shop-single-dr.html">Description Right</a></li>
+                      <li><a href="shop-single-dl.html">Description Left</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                  <li><a href="wishlist.html">Wishlist</a></li>
+                  <li><a href="checkout.html">Checkout</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="checkout.html">Checkout Page</a></li>
+                      <li><a href="checkout-unregistered.html">Unregistered User</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shop-delivery.html">Delivery Info Page</a></li>
+                  <li><a href="shop-tracking.html">Delivery Tracking</a></li>
+                  <li><a href="shop-history.html">Purchase History</a></li>
+                </ul>
+              </li>
+            	<li><a href="pages.html">Pages</a><span></span>
+                <ul class="submenu">
+                  <li><a href="login.html">Login Page</a></li>
+                  <li><a href="signup.html">Sign Up Page</a></li>
+                  <li><a href="user-account.html">User Account Page</a></li>
+                  <li><a href="resume.html">Resume / Portfolio</a></li>
+                  <li><a href="portfolio-single.html">Single Project Page</a></li>
+                  <li><a href="events-schedule.html">Events Schedule</a></li>
+                  <li><a href="about-corporate.html">About Us</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="about-corporate.html">About Corporate</a></li>
+                      <li><a href="about-personal.html">About Personal</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="team-profile.html">Team Member Profile</a></li>
+                  <li><a href="faq-tabs.html">FAQ/Support Pages</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="faq-tabs.html">Tabs Version</a></li>
+                      <li><a href="faq-standard.html">Standard Version</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="under-construction.html">Under Construction</a></li>
+                  <li><a href="search.html">Search Page</a></li>
+                  <li><a href="search-results.html">Search Results</a></li>
+                  <li><a href="404.html">Error Pages</a><span></span>
+                    <ul class="sub-submenu">
+                      <li><a href="404.html">404 Page</a></li>
+                      <li><a href="500.html">500 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+              </li>
+            	<li><a href="components-and-styles.html">Features</a><span></span>
+                <ul class="submenu">
+                  <li><a href="components-and-styles.html">Components &amp; Styles</a></li>
+                  <li><a href="sliders-and-carousels.html">Sliders &amp; Carousels</a></li>
+                  <li><a href="grid-and-list.html">Grid &amp; List Layouts</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside><!--Off-Canvas Menu Close-->
+      	
+        <!--Layout-->
+        <div class="site-layout"><!--If you add class "boxed" to .site-layout it wraps the whole document in a box, than you can simply add pattern background to body or leave it white. Please note in a "boxed" mode header doesn't stick to the top.-->
+        
+          <!--Header Toolbar-->
+          <div class="header-toolbar">
+            <div class="container">
+              <div class="cont-info">
+                <div><i class="fa fa-map-marker"></i>105448 Casa Blanca BLVD New York</div>
+                <div><i class="fa fa-phone"></i>+30 (45) 224-33-12</div>
+                <div><i class="fa fa-envelope"></i><a href="mailto:info@yoursite.com">info@yoursite.com</a></div>
+              </div>
+              <div class="social-bar">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-github-alt"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <ul class="tools">
+                <li class="currency"><a href="#">$ Usd</a>
+                  <ul>
+                    <li><a href="#">&euro; Eur</a></li>
+                    <li><a href="#">&pound; Gbp</a></li>
+                    <li><a href="#">&yen; Yen</a></li>
+                  </ul>
+                </li>
+                <li class="lang"><a href="#">Eng</a>
+                  <ul>
+                    <li><a href="#">Deu</a></li>
+                    <li><a href="#">Esp</a></li>
+                    <li><a href="#">Jpn</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div><!--Header Toolbar Close-->
+          
+          <!--Header-->
+          <header class="header sticky"><!--Adding class "sticky" to header enables its pinning to top on scroll. Please note in a "boxed" mode header doesn't stick to the top.-->
+            <div class="inner">
+              <div class="container group">
+              
+                <!--Logo-->
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="Kedavra"/></a>
+                
+                <!--Navigation Toggle-->
+                <div class="left-off-canvas-toggle" id="nav-toggle">
+                  <span></span>
+                </div>
+                
+                <!--Site Navigation-->
+                <div class="navigation">
+                  <!--Menu-->
+                  <nav class="menu">
+                    <ul>
+                      <li class="active has-mega-menu"><a href="index.html">Home</a>
+                        <div class="mega-menu">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <h4>Homepages</h4>
+                                <ul>
+                                  <li class="has-submenu active"><a href="home-business-law.html" data-target="#business">Home Business</a></li>
+                                  <li class="has-submenu"><a href="home-portfolio-photographer.html" data-target="#portfolio">Home Portfolio</a></li>
+                                  <li class="has-submenu"><a href="home-blog-corporate.html" data-target="#blog">Home Blog</a></li>
+                                  <li class="has-submenu"><a href="home-shop-catalog.html" data-target="#ecommerce">Home E-Commerce</a></li>
+                                  <li class="has-submenu"><a href="home-events.html" data-target="#events">Home Events</a></li>
+                                  <li class="has-submenu"><a href="home-startup.html" data-target="#startup">Home Startup</a></li>
+                                  <li class="has-submenu"><a href="home-landing.html" data-target="#landing">Home Landing</a></li>
+                                  <li class="has-submenu"><a href="home-services.html" data-target="#services">Home Services</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-9">
+                                <div class="row">
+                                
+                                  <!--Home Business Submenu-->
+                                  <div class="col-sm-8 mega-submenu active" id="business">
+                                    <h4 class="text-center">Choose Version</h4>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-business-law.html">
+                                          <img src="img/megamenu/business-law.png" alt="Lawyer Services"/>
+                                          Lawyer Services
+                                        </a>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-business-real-estate.html">
+                                          <img src="img/megamenu/business-real-estate.png" alt="Real Estate"/>
+                                          Real Estate
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!--Home Portfolio Submenu-->
+                                  <div class="col-sm-8 mega-submenu" id="portfolio">
+                                    <h4 class="text-center">Choose Version</h4>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-portfolio-photographer.html">
+                                          <img src="img/megamenu/portfolio-photo.png" alt="Photographer"/>
+                                          Photographer
+                                        </a>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-portfolio-musician.html">
+                                          <img src="img/megamenu/portfolio-music.png" alt="Musician"/>
+                                          Musician
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!--Home Blog Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="blog">
+                                    <h4 class="text-center">Choose Version</h4>
+                                    <div class="row">
+                                      <div class="col-md-6 col-sm-6">
+                                        <a class="img-link" href="home-blog-personal.html">
+                                          <img src="img/megamenu/blog-personal.png" alt="Personal Blog"/>
+                                          Personal Blog
+                                        </a>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6">
+                                        <a class="img-link" href="home-blog-corporate.html">
+                                          <img src="img/megamenu/blog-corporate.png" alt="Corporate Blog"/>
+                                          Corporate Blog
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!--Home Ecommerce Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="ecommerce">
+                                    <h4 class="text-center">Choose Version</h4>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-shop-catalog.html">
+                                          <img src="img/megamenu/shop-catalog.png" alt="Home Catalog"/>
+                                          Home Catalog
+                                        </a>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <a class="img-link" href="home-shop-featured-product.html">
+                                          <img src="img/megamenu/shop-featured.png" alt="Featured Product"/>
+                                          Featured Product
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <!--Home Events Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="events">
+                                    <a class="img-link" href="home-events.html">
+                                      <img src="img/megamenu/event.png" alt="Events"/>
+                                    </a>
+                                  </div>
+                                  
+                                  <!--Home Startup Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="startup">
+                                    <a class="img-link" href="home-startup.html">
+                                      <img src="img/megamenu/startup.png" alt="Startup"/>
+                                    </a>
+                                  </div>
+                                  
+                                  <!--Home Landing Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="landing">
+                                    <a class="img-link" href="home-landing.html">
+                                      <img src="img/megamenu/landing.png" alt="Landing"/>
+                                    </a>
+                                  </div>
+                                  
+                                  <!--Home Services Submenu-->
+                                  <div class="mega-submenu col-sm-8" id="services">
+                                    <a class="img-link" href="home-services.html">
+                                      <img src="img/megamenu/services.png" alt="Services"/>
+                                    </a>
+                                  </div>
+                                  
+                                  <!--Help Info-->
+                                  <div class="col-sm-4">
+                                    <h4>Need Help?</h4>
+                                    <p><a href="http://8guild.ticksy.com/" target="_blank">Visit the Help Center</a></p>
+                                    <table>
+                                      <tr>
+                                        <td>Chat</td>
+                                        <td class="text-danger">Currently offline</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Email</td>
+                                        <td class="text-danger"><a href="mailto:support@8guild.com">support@8guild.com</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>Phone</td>
+                                        <td>+1 888 458 5376</td>
+                                      </tr>
+                                    </table>
+                                    <p class="small text-muted">Our customers call us with gratitude, and we are very pleased by this!<br>Your difficulties is our concern.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="blog-grid-sr.html">Blog</a>
+                        <ul class="submenu">
+                          <li><a href="blog-grid-sr.html">Grid Layout <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="blog-grid-fw.html">Grid Full Width</a></li>
+                              <li><a href="blog-grid-sr.html">Grid Sidebar Right</a></li>
+                              <li><a href="blog-grid-sl.html">Grid Sidebar Left</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="blog-list-sr.html">List Layout <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="blog-list-fw.html">List Full Width</a></li>
+                              <li><a href="blog-list-2cols.html">List 2 Columns</a></li>
+                              <li><a href="blog-list-sr.html">List Sidebar Right</a></li>
+                              <li><a href="blog-list-sl.html">List Sidebar Left</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="blog-single-slider.html">Single Post <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="blog-single-image.html">Image Post</a></li>
+                              <li><a href="blog-single-banner.html">Fullwidth Banner</a></li>
+                              <li><a href="blog-single-gallery.html">Gallery Post</a></li>
+                              <li><a href="blog-single-slider.html">Slider Post</a></li>
+                              <li><a href="blog-single-video.html">Video Post</a></li>
+                              <li><a href="blog-single-audio.html">Audio Post</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="shop-grid-1-big-banner.html">Shop</a>
+                        <ul class="submenu">
+                          <li><a href="shop-grid-1-big-banner.html">Grid Layout Type 1 <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="shop-grid-1-fw.html">Grid Full Width</a></li>
+                              <li><a href="shop-grid-1-big-banner.html">Grid Big Banner</a></li>
+                              <li><a href="shop-grid-1-sl.html">Grid Sidebar Left</a></li>
+                              <li><a href="shop-grid-1-sr.html">Grid Sidebar Right</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="shop-grid-2-big-banner.html">Grid Layout Type 2 <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="shop-grid-2-fw.html">Grid Full Width</a></li>
+                              <li><a href="shop-grid-2-big-banner.html">Grid Big Banner</a></li>
+                              <li><a href="shop-grid-2-sl.html">Grid Sidebar Left</a></li>
+                              <li><a href="shop-grid-2-sr.html">Grid Sidebar Right</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="shop-list-big-banner.html">List Layout <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="shop-list-fw.html">List Full Width</a></li>
+                              <li><a href="shop-list-big-banner.html">List Big Banner</a></li>
+                              <li><a href="shop-list-sl.html">List Sidebar Left</a></li>
+                              <li><a href="shop-list-sr.html">List Sidebar Right</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="shop-single-dr.html">Single Product <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="shop-single-dr.html">Description Right</a></li>
+                              <li><a href="shop-single-dl.html">Description Left</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                          <li><a href="wishlist.html">Wishlist</a></li>
+                          <li><a href="checkout.html">Checkout <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="checkout.html">Checkout Page</a></li>
+                              <li><a href="checkout-unregistered.html">Unregistered User</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="shop-delivery.html">Delivery Info Page</a></li>
+                          <li><a href="shop-tracking.html">Delivery Tracking</a></li>
+                          <li><a href="shop-history.html">Purchase History</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-mega-menu"><a href="#">Shop Mega-Menu</a>
+                        <div class="mega-menu">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-3">
+                                <h4>Categories</h4>
+                                <ul>
+                                  <li class="has-submenu active"><a href="#" data-target="#big-banner">Big Banner</a></li>
+                                  <li class="has-submenu"><a href="#" data-target="#three-cats">Three Categories</a></li>
+                                  <li class="has-submenu"><a href="#" data-target="#bestsellers">Best Sellers</a></li>
+                                  <li class="has-submenu"><a href="#" data-target="#cat-banner">Category Banner</a></li>
+                                  <li class="has-submenu"><a href="#" data-target="#bonus">Bonus Version</a></li>
+                                </ul>
+                              </div>
+                              
+                              <!--Big Banner-->
+                              <div class="mega-submenu col-md-10 col-sm-9 active" id="big-banner">
+                                <a class="img-link" href="#"><img src="img/megamenu/big-banner.jpg" alt="Banner"/></a>
+                              </div>
+                              
+                              <!--Three Categories-->
+                              <div class="mega-submenu col-md-10 col-sm-9" id="three-cats">
+                                <h4 class="text-center">GET THE LATEST FROM KEDAVRA</h4>
+                                <div class="row">
+                                  <div class="col-md-4 col-sm-4">
+                                    <a class="img-link" href="#">
+                                      <img src="img/megamenu/cat01.png" alt="Cat01"/>
+                                    </a>
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem aute irure dolor elit, sed nulla amet dolor do eiusmod tempor ut labore et.</p>
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                    <a class="img-link" href="#">
+                                      <img src="img/megamenu/cat02.png" alt="Cat02"/>
+                                    </a>
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem aute irure dolor elit, sed nulla amet dolor do eiusmod tempor ut labore et.</p>
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                  <a class="img-link" href="#">
+                                    <img src="img/megamenu/cat03.png" alt="Cat03"/>
+                                  </a>
+                                  <h5>Lorem ipsum dolor sit</h5>
+                                  <p>Lorem aute irure dolor elit, sed nulla amet dolor do eiusmod tempor ut labore et.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!--Best Sellers-->
+                              <div class="mega-submenu col-md-10 col-sm-9" id="bestsellers">
+                                <div class="row">
+                                  <div class="col-md-3 col-sm-3">
+                                    <h4>Bags &amp; Accessories</h4>
+                                    <ul>
+                                      <li><a href="#">Handbags</a></li>
+                                      <li><a href="#">Backpacks</a></li>
+                                      <li><a href="#">Wallets</a></li>
+                                      <li><a href="#">Purses</a></li>
+                                      <li><a href="#">Sport Bags</a></li>
+                                      <li><a href="#">Belts</a></li>
+                                      <li><a href="#">Gloves</a></li>
+                                      <li><a href="#">Leather Shoes</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-9 col-sm-9">
+                                    <h4 class="text-center">CHOOSE YOUR WALLET</h4>
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4">
+                                        <a class="img-link uppercase" href="#">
+                                          <img src="img/megamenu/bestsell01.png" alt="Bestsell01"/>
+                                          Wallet Gray
+                                        </a>
+                                      </div>
+                                      <div class="col-md-4 col-sm-4">
+                                        <a class="img-link uppercase" href="#">
+                                          <img src="img/megamenu/bestsell02.png" alt="Bestsell02"/>
+                                          Wallet Black
+                                        </a>
+                                      </div>
+                                      <div class="col-md-4 col-sm-4">
+                                        <a class="img-link uppercase" href="#">
+                                          <img src="img/megamenu/bestsell03.png" alt="Bestsell03"/>
+                                          Wallet Brown
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!--Category Banner-->
+                              <div class="mega-submenu col-md-10 col-sm-9" id="cat-banner">
+                                <div class="row">
+                                  <div class="col-md-3 col-sm-3">
+                                    <h4>Bags &amp; Accessories</h4>
+                                    <ul>
+                                      <li><a href="#">Handbags</a></li>
+                                      <li><a href="#">Backpacks</a></li>
+                                      <li><a href="#">Wallets</a></li>
+                                      <li><a href="#">Purses</a></li>
+                                      <li><a href="#">Sport Bags</a></li>
+                                      <li><a href="#">Belts</a></li>
+                                      <li><a href="#">Gloves</a></li>
+                                      <li><a href="#">Leather Shoes</a></li>
+                                      <li><a href="#">Clothing</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-9 col-sm-9">
+                                    <h4 class="text-center">FREE SHIPING</h4>
+                                    <a href="#" class="img-link"><img src="img/megamenu/cat-banner.jpg" alt="Banner"/></a>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <!--Bonus Version-->
+                              <div class="mega-submenu col-md-10 col-sm-9" id="bonus">
+                                <div class="row">
+                                  <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1">
+                                    <a class="img-link uppercase" href="#">
+                                      <img src="img/megamenu/bonus/soccer.png" alt="Soccer"/>
+                                      Soccer
+                                    </a>
+                                  </div>
+                                  <div class="col-md-2 col-sm-2">
+                                    <a class="img-link uppercase" href="#">
+                                      <img src="img/megamenu/bonus/running.png" alt="Running"/>
+                                      Running
+                                    </a>
+                                  </div>
+                                  <div class="col-md-2 col-sm-2">
+                                    <a class="img-link uppercase" href="#">
+                                      <img src="img/megamenu/bonus/training.png" alt="Training"/>
+                                      Training
+                                    </a>
+                                  </div>
+                                  <div class="col-md-2 col-sm-2">
+                                    <a class="img-link uppercase" href="#">
+                                      <img src="img/megamenu/bonus/football.png" alt="Football"/>
+                                      Football
+                                    </a>
+                                  </div>
+                                  <div class="col-md-2 col-sm-2">
+                                    <a class="img-link uppercase" href="#">
+                                      <img src="img/megamenu/bonus/basketball.png" alt="Basketball"/>
+                                      Basketball
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="pages.html">Pages</a>
+                        <ul class="submenu">
+                          <li><a href="login.html">Login Page</a></li>
+                          <li><a href="signup.html">Sign Up Page</a></li>
+                          <li><a href="user-account.html">User Account Page</a></li>
+                          <li><a href="resume.html">Resume / Portfolio</a></li>
+                          <li><a href="portfolio-single.html">Single Project Page</a></li>
+                          <li><a href="events-schedule.html">Events Schedule</a></li>
+                          <li><a href="about-corporate.html">About Us <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="about-corporate.html">About Corporate</a></li>
+                              <li><a href="about-personal.html">About Personal</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="contacts.html">Contacts</a></li>
+                          <li><a href="team.html">Our Team</a></li>
+                          <li><a href="team-profile.html">Team Member Profile</a></li>
+                          <li><a href="faq-tabs.html">FAQ/Support Pages <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="faq-tabs.html">Tabs Version</a></li>
+                              <li><a href="faq-standard.html">Standard Version</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="under-construction.html">Under Construction</a></li>
+                          <li><a href="search.html">Search Page</a></li>
+                          <li><a href="search-results.html">Search Results</a></li>
+                          <li><a href="404.html">Error Pages <i class="fa fa-angle-right"></i></a>
+                            <ul class="sub-submenu">
+                              <li><a href="404.html">404 Page</a></li>
+                              <li><a href="500.html">500 Page</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="sitemap.html">Sitemap</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="components-and-styles.html">Features</a>
+                        <ul class="submenu">
+                          <li><a href="components-and-styles.html">Components &amp; Styles</a></li>
+                          <li><a href="sliders-and-carousels.html">Sliders &amp; Carousels</a></li>
+                          <li><a href="grid-and-list.html">Grid &amp; List Layouts</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!--Search-->
+                  <div class="search"><i class="flaticon-search100"></i></div>
+                </div>
+                
+                <!--Tools-->  
+                <div class="tools group">
+                  <div class="cart-btn">
+                    <a class="link" href="shopping-cart.html">
+                      <span>4</span>
+                    </a>
+                    <div class="cart-dropdown">
+                      <div class="empty-cart">
+                        <p>There are no items in your cart.</p>
+                        <a class="btn btn-center btn-primary" href="shop-grid-1-big-banner.html">Go to catalog</a>
+                      </div>
+                      <div class="wrap">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-8 col-sm-9">
+                              <div class="owl-carousel">
+                                <div class="item">
+                                  <div class="delete"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></div>
+                                  <a href="shop-single-dr.html">
+                                    <span class="name">Tourist backpack</span>
+                                    <span class="price">175 $</span>
+                                    <span class="overlay"></span>
+                                    <img src="img/cart-dropdown/item01.jpg" alt="Item01"/>
+                                   </a>
+                                  <div class="qnt-count">
+                                    <a class="incr-btn fa fa-angle-left inactive" data-action="decrease" href="#"></a>
+                                    <input class="quantity" type="text" value="1">
+                                    <a class="incr-btn fa fa-angle-right" data-action="increase" href="#"></a>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="delete"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></div>
+                                  <a href="shop-single-dl.html">
+                                    <span class="name">Horsefeathers 752</span>
+                                    <span class="price">129 $</span>
+                                    <span class="overlay"></span>
+                                    <img src="img/cart-dropdown/item02.jpg" alt="Item02"/>
+                                   </a>
+                                  <div class="qnt-count">
+                                    <a class="incr-btn fa fa-angle-left inactive" data-action="decrease" href="#"></a>
+                                    <input class="quantity" type="text" value="1">
+                                    <a class="incr-btn fa fa-angle-right" data-action="increase" href="#"></a>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="delete"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></div>
+                                  <a href="shop-single-dr.html">
+                                    <span class="name">Leather handbag</span>
+                                    <span class="price">345 $</span>
+                                    <span class="overlay"></span>
+                                    <img src="img/cart-dropdown/item03.jpg" alt="Item03"/>
+                                   </a>
+                                  <div class="qnt-count">
+                                    <a class="incr-btn fa fa-angle-left inactive" data-action="decrease" href="#"></a>
+                                    <input class="quantity" type="text" value="1">
+                                    <a class="incr-btn fa fa-angle-right" data-action="increase" href="#"></a>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="delete"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></div>
+                                  <a href="shop-single-dl.html">
+                                    <span class="name">Ultra durable backpack</span>
+                                    <span class="price">220 $</span>
+                                    <span class="overlay"></span>
+                                    <img src="img/cart-dropdown/item04.jpg" alt="Item04"/>
+                                   </a>
+                                  <div class="qnt-count">
+                                    <a class="incr-btn fa fa-angle-left inactive" data-action="decrease" href="#"></a>
+                                    <input class="quantity" type="text" value="1">
+                                    <a class="incr-btn fa fa-angle-right" data-action="increase" href="#"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                              <table>
+                                <tr>
+                                  <td>Subtotal</td>
+                                  <td class="text-right">999 $</td>
+                                </tr>
+                                <tr>
+                                  <td>Delivery</td>
+                                  <td class="text-right">111 $</td>
+                                </tr>
+                              </table>
+                              <table class="total">
+                                <tr>
+                                  <td>Total</td>
+                                  <td class="text-right">1110 $</td>
+                                </tr>
+                              </table>
+                              <div class="links">
+                                <a href="#">Need a Special Preparation?</a><br />
+                                <a href="#" id="promo-code-link">Gift or Promo Code?</a>
+                                <form class="promo-code group">
+                                  <label for="promo-code"></label>
+                                  <input class="form-control" type="text" name="promo-code" id="promo-code" placeholder="Code">
+                                  <input class="btn disabled" type="submit" value="Apply">
+                                </form>
+                              </div>
+                              <a class="btn btn-center btn-primary" href="checkout.html">Checkout</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="pull-right" href="login.html">Login</a>
+                  <a class="signup pull-right" href="signup.html">Sign Up</a>
+                </div><!--Tools Close-->
+                
+              </div>
+            </div>
+            
+            <!--Quick Search-->
+            <form class="quick-search" method="get" autocomplete="off">
+              <div class="overlay"></div>
+              <input class="search-field" type="text" placeholder="Search">
+              <span>Press enter to search</span>
+            </form>
+            
+          </header><!--Header Close-->
+          
+          <!--Page Content--><!-- InstanceBeginEditable name="content" -->
+        <div class="page">
+        	
+          <!--Introduction-->
+          <section class="page-block double-padding-top">
+          	<div class="container">
+              <div class="page-heading center">
+                <h2>Kedavra Pages</h2>
+                <h3>Look what we have developed exclusively for you<span></span></h3>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <h4 class="bold-weight">Kedavra - Next Generation Theme</h4>
+                  <p>We developed a multifunctional theme for professionals who aim to create a lot of effective and versatile websites: from personal blogs, websites-portfolio and functional landing pages to commercial websites and large online-stores.</p>
+                  <p>Below you will find the list of secondary pages linked to their originals, excluding home pages, blog and shop.</p>
+                  <p>When Developing Kevadra theme we were guided by our long term online-business experience and by contemporary usability trends and trends of developing high conversion UIs.</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="row icon-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 featured-icon center"><i class="flaticon-compass106"></i></div>
+                    <div class="col-md-10 col-sm-10">
+                      <h5>Analytics is the main principle we took into account when developing Kevadra theme.</h5>
+                      <p>Designing multifunctional theme we focused primarily on conversion rate improvements.</p>
+                    </div>
+                  </div>
+                  <div class="row icon-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 featured-icon center"><i class="flaticon-earth205"></i></div>
+                    <div class="col-md-10 col-sm-10">
+                      <h5>It suits various purposes and can be easily extended.</h5>
+                      <p>Regardless of what is your website orientation we created everything in order you could develop it with Kevadra!</p>
+                    </div>
+                  </div>
+                  <div class="row icon-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 featured-icon center"><i class="flaticon-work3"></i></div>
+                    <div class="col-md-10 col-sm-10">
+                      <h5>Clean, optimized, high quality code.</h5>
+                      <p>Regardless of website page number, everything would work correctly thanks to clean and valid code.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><!--Introduction Close-->
+          
+          <!--Login / Sign Up-->
+          <section class="container">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Login Page / Sign Up Pages<span></span></h3>
+            </div>
+            <div class="row double-space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="login.html"><img src="img/pages/login.png" alt="Login"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+              	<h3 class="light-weight">Login Page</h3>
+                <p>Log in and sign up pages are easy and convenient forms without distracting elements. It has everything to quickly sign up and log in.</p>
+                <p>We also used textual guides for the forms where it is suggested to point out the key sign up or login benefits. It is used to increase conversion!</p>
+                <a class="btn btn-primary btn-md" href="login.html">View Page Demo</a>
+              </div>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+              	<a class="image-3d reverse" href="signup.html"><img src="img/pages/signup.png" alt="Sign Up"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 center-mobile">
+              	<h3 class="light-weight">Sign Up Page</h3>
+                <p>Log in and sign up pages are easy and convenient forms without distracting elements. It has everything to quickly sign up and log in.</p>
+                <p>We also used textual guides for the forms where it is suggested to point out the key sign up or login benefits. It is used to increase conversion!</p>
+                <a class="btn btn-primary btn-md" href="signup.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Login / Sign Up Close-->
+          
+          <!--User Account-->
+          <section class="container space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>User Account Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="user-account.html"><img src="img/pages/user.png" alt="User Account"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+              	<h3 class="light-weight">User Account Page</h3>
+                <p>According to the concept of functional and useful multipage theme we included well thought personal account page. Its functionality will suit both personal website and online-store.</p>
+                <p>Account page includes such settings as: General account settings, Privacy, Addresses, Payment options, Sharing and Notifications. It will help your future users store and manage their data.</p>
+                <a class="btn btn-primary btn-md" href="user-account.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--User Account Close-->
+          
+          <!--Resume / Portfolio-->
+          <section class="gray-bg space-top no-padding-bottom">
+            <div class="container">
+              <div class="page-heading center animation" data-animation="zoomIn">
+                <h3>Resume / Portfolio Page<span></span></h3>
+              </div>
+              <div class="row space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 space-bottom">
+                  <a class="image-3d reverse" href="resume.html"><img src="img/pages/resume.png" alt="Resume / Portfolio"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 space-bottom center-mobile">
+                  <h3 class="light-weight">Resume / Portfolio Page</h3>
+                  <p>It is a page that helps to easily and vividly demonstrate applicant&#39;s key skills and/or share his/her achievements and to tell personal story. It has everything to create a functional resume page with a gallery which can be filled in with one&#39;s portfolio.</p>
+                  <p>This page can be used either as individual portfolio and resume or as resume of a team which consists of several members.</p>
+                  <a class="btn btn-primary btn-md" href="resume.html">View Page Demo</a>
+                </div>
+              </div>
+            </div>
+          </section><!--Resume / Portfolio Close-->
+          
+          <!--Single Project Page-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Single Project Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+              	<a class="image-3d reverse" href="portfolio-single.html"><img src="img/pages/single-project.png" alt="Single Project"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 center-mobile">
+              	<h3 class="light-weight">Single Project Page</h3>
+                <p>This page designed to give you ability to show off our individual project.</p>
+                <p>It includes detailed project description like project name, details, list of what was done, client information, main task, performers, and date the project was completed.</p>
+                <p>It also features compact but still eye catching slider for project screens. There is also links to other projects your visitor may be interested in.</p>
+                <a class="btn btn-primary btn-md" href="portfolio-single.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Single Project Page Close-->
+          
+          <!--Info Box Widget-->
+          <section class="info-box gray">
+            <div class="container space-top space-bottom">
+              <div class="row">
+                <h4 class="light-color">Check out our new theme!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                <a class="btn btn-outlined btn-primary" style="margin-right:30px !important;" href="#">Buy Kedavra</a>
+                <a class="btn btn-primary btn-md" href="#">See More</a>
+            </div>
+          </section><!--Info Box Widget Close-->
+          
+          <!--Events Schedule-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Events Schedule Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="events-schedule.html"><img src="img/pages/event-schedule.png" alt="Events Schedule"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+              	<h3 class="light-weight">Events Schedule Page</h3>
+                <p>Kevadra theme contains a page dedicated to any events. It can be a long term conference or an one-day seminar. We provided an intuitive schedule, ability to pick up a particular date in a calendar.</p>
+                <p>The theme also includes an opportunity to choose paid service package and quick sign up form which can be found on <a href="home-events.html">Events Home Page</a>.</p>
+                <a class="btn btn-primary btn-md" href="events-schedule.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Events Schedule Close-->
+          
+          <!--About Pages-->
+          <section class="gray-bg space-top no-padding-bottom">
+            <div class="container">
+              <div class="page-heading center animation" data-animation="zoomIn">
+                <h3>About Us Pages: Corporate and Personal versions<span></span></h3>
+              </div>
+              <div class="row space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 space-bottom">
+                  <a class="image-3d reverse" href="about-corporate.html"><img src="img/pages/about-corporate.png" alt="About Corporate"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 space-bottom center-mobile">
+                  <h3 class="light-weight">Corporate Version</h3>
+                  <p>In our multifunctional Kevadra theme we offer two About pages with corporate and personal usage scenarios respectively.</p>
+                  <p>In the first one, which is more strict-looking, we focused on visual content that can be used to demonstrate either your advantages or services. We also added to the page a block with team members.</p>
+                  <a class="btn btn-primary btn-md" href="about-corporate.html">View Page Demo</a>
+                </div>
+              </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="about-personal.html"><img src="img/pages/about-personal.png" alt="About Personal"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 space-bottom center-mobile">
+              	<h3 class="light-weight">Personal Version</h3>
+                <p>In the Personal version we emphasized the opportunity of showing not only acquired skills but also creating a presentation of a person.</p>
+                <p>For this purpose we used a module with a picture and short story "About myself" along with "My Achievements" section, contact information and quick contact form.</p>
+                <a class="btn btn-primary btn-md" href="about-personal.html">View Page Demo</a>
+              </div>
+            </div>
+            </div>
+          </section><!--About Pages Close-->
+          
+          <!--Contacts Page-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Contacts Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+              	<a class="image-3d reverse" href="contacts.html"><img src="img/pages/contacts.png" alt="Contacts"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 center-mobile">
+              	<h3 class="light-weight">Contacts Page</h3>
+                <p>On Contact page we filled in the space not only with contact info but also with corporate news.  Probably, a potential client who got interested in your product or service would be glad to subscribe for your news.</p>
+                <p>As a contact data we provided a static info and interactive multifunctional form: with the help of this form you can either send a resume in a file format or send email. You can use its functionality according to you needs.</p>
+                <a class="btn btn-primary btn-md" href="contacts.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Contacts Page Close-->
+          
+          <!--Our Team / Team Member-->
+          <section class="gray-bg space-top space-bottom no-padding-bottom">
+            <div class="container">
+              <div class="page-heading center animation" data-animation="zoomIn">
+                <h3>Our Team / Team Member Profile Page<span></span></h3>
+              </div>
+              <div class="row double-space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+                  <a class="image-3d" href="team.html"><img src="img/pages/team.png" alt="Team"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+                  <h3 class="light-weight">Our Team Page</h3>
+                  <p>In Kevadra theme we implemented some approaches for a team presentation. We also attempted to visually define team members&#39; roles.</p>
+                  <p>For instance, on Our Team page we used pyramidal structure which would be convenient for demonstration of company hierarchy.</p>
+                  <a class="btn btn-primary btn-md" href="team.html">View Page Demo</a>
+                </div>
+              </div>
+              <div class="row space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 space-bottom">
+                  <a class="image-3d reverse" href="team-profile.html"><img src="img/pages/team-member.png" alt="Team Member"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 center-mobile space-bottom">
+                  <h3 class="light-weight">Team Member Profile</h3>
+                  <p>On Team Member Profile page we accentuated highly useful personal info with opportunity to quickly contact any team member and also via social networks.</p>
+                  <p>The big photo on the right page side helps to achieve visual contact between viewer and the team member.</p>
+                  <a class="btn btn-primary btn-md" href="team-profile.html">View Page Demo</a>
+                </div>
+              </div>
+            </div>
+          </section><!--Our Team / Team Member Close-->
+          
+          <!--FAQ Pages-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Faq (support pages): Tabs Version / Standart versions<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+                <a class="image-3d reverse" href="faq-tabs.html"><img src="img/pages/faq-tabs.png" alt="FAQ Tabs Version"/></a>
+              </div>
+              <div class="col-md-6 col-sm-6 center-mobile">
+                <h3 class="light-weight">Tabs Version</h3>
+                <p>Regardless of the size of site audience there&#39;s always a need in additional info structured as FAQ. We aimed to create functional FAQ page, which could be convenient for users and for posting visual information.</p>
+                <p>As a result two FAQ pages were developed: in a standard presentation "question - answer" and a version with tabs which would be useful for those who have a lot of additional helpful information.</p>
+                <a class="btn btn-primary btn-md" href="faq-tabs.html">View Page Demo</a>
+              </div>
+            </div>
+            <div class="row double-space-top space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+                <a class="image-3d" href="faq-standard.html"><img src="img/pages/faq-standard.png" alt="FAQ Standard Version"/></a>
+              </div>
+              <div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+                <h3 class="light-weight">Standart Version</h3>
+                <p>Regardless of the size of site audience there&#39;s always a need in additional info structured as FAQ. We aimed to create functional FAQ page, which could be convenient for users and for posting visual information.</p>
+                <p>As a result two FAQ pages were developed: in a standard presentation "question - answer" and a version with tabs which would be useful for those who have a lot of additional helpful information.</p>
+                <a class="btn btn-primary btn-md" href="faq-standard.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--FAQ Pages Close-->
+          
+          <!--Info Box Widget-->
+          <section class="info-box gray">
+            <div class="container space-top space-bottom">
+              <div class="row">
+                <h4 class="light-color">Check out our new theme!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                <a class="btn btn-outlined btn-primary" style="margin-right:30px !important;" href="#">Buy Kedavra</a>
+                <a class="btn btn-primary btn-md" href="#">See More</a>
+            </div>
+          </section><!--Info Box Widget Close-->
+          
+          <!--Under Construction-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Under Construction Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+              	<a class="image-3d reverse" href="under-construction.html"><img src="img/pages/under-constr.png" alt="Under Construction"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 center-mobile">
+              	<h3 class="light-weight">Under Construction Page</h3>
+                <p>Kevadra contains a separate Under Constructions page which has a unique premium-theme style.</p>
+                <p>It will appeal to all who cares about keeping in touch with the audience during the maintenance work.</p>
+                <a class="btn btn-primary btn-md" href="under-construction.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Under Construction Close-->
+          
+          <!--Search / Search Results-->
+          <section class="gray-bg space-top">
+          	<div class="container">
+              <div class="page-heading center animation" data-animation="zoomIn">
+                <h3>Search Page / Search Results Page<span></span></h3>
+              </div>
+              <div class="row double-space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+                  <a class="image-3d" href="search.html"><img src="img/pages/search.png" alt="Search Page"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+                  <h3 class="light-weight">Search Page</h3>
+                  <p>We developed two logical ways of performing search.</p> 
+                  <p>The first one is a one-click dropdown search form as seen near the site navigation bar. And the second one is a separate search page in case if dropdown form doesn't meet special needs. For example, if there&#39;s a need to place handy stuff for a user (FAQ etc).</p>
+                  <a class="btn btn-primary btn-md" href="search.html">View Page Demo</a>
+                </div>
+              </div>
+              <div class="row space-bottom animation" data-animation="fadeIn">
+                <div class="col-md-6 col-sm-6 space-bottom">
+                  <a class="image-3d reverse" href="search-results.html"><img src="img/pages/search-results.png" alt="Search Results"/></a>
+                </div>
+                <div class="col-md-6 col-sm-6 center-mobile">
+                  <h3 class="light-weight">Search Results Page</h3>
+                  <p>In Kedavra we decided to show how the page will be looking when the search is complete.</p>
+                  <p>The results of the search represented by small thumbnails (if your post got some) and short description.</p>
+                  <a class="btn btn-primary btn-md" href="search-results.html">View Page Demo</a>
+                </div>
+              </div>
+            </div>
+          </section><!--Search / Search Results Close-->
+          
+          <!--Error Pages-->
+          <section class="container double-space-top">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Error Pages: 404 / 500<span></span></h3>
+            </div>
+            <div class="row double-space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="404.html"><img src="img/pages/404.png" alt="Login"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+              	<h3 class="light-weight">404 Page</h3>
+                <p>In Kevadra we provided both 404 error page (which has a search form to keep users hooked) and a consistently styled in accordance with the theme 500 error page. In case a server goes down you won&#39;t lose contact with your users.</p>
+                <p>imply tune a page placing some useful contact points with site visitors.</p>
+                <a class="btn btn-primary btn-md" href="404.html">View Page Demo</a>
+              </div>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 space-bottom">
+              	<a class="image-3d reverse" href="500.html"><img src="img/pages/500.png" alt="Sign Up"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 center-mobile">
+              	<h3 class="light-weight">500 Page</h3>
+                <p>In Kevadra we provided both 404 error page (which has a search form to keep users hooked) and a consistently styled in accordance with the theme 500 error page. In case a server goes down you won&#39;t lose contact with your users.</p>
+                <p>imply tune a page placing some useful contact points with site visitors.</p>
+                <a class="btn btn-primary btn-md" href="500.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Error Pages Close-->
+          
+          <!--Info Box Widget-->
+          <section class="info-box gray">
+            <div class="container space-top space-bottom">
+              <div class="row">
+                <h4 class="light-color">Check out our new theme!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                <a class="btn btn-outlined btn-primary" style="margin-right:30px !important;" href="#">Buy Kedavra</a>
+                <a class="btn btn-primary btn-md" href="#">See More</a>
+            </div>
+          </section><!--Info Box Widget Close-->
+          
+          <!--Sitemap-->
+          <section class="container double-space-top double-space-bottom">
+            <div class="page-heading center animation" data-animation="zoomIn">
+              <h3>Sitemap Page<span></span></h3>
+            </div>
+            <div class="row space-bottom animation" data-animation="fadeIn">
+              <div class="col-md-6 col-sm-6 col-md-push-6 col-sm-push-6 space-bottom">
+              	<a class="image-3d" href="sitemap.html"><img src="img/pages/sitemap.png" alt="Events Schedule"/></a>
+              </div>
+            	<div class="col-md-6 col-sm-6 col-md-pull-6 col-sm-pull-6 center-mobile">
+              	<h3 class="light-weight">Sitemap Page</h3>
+                <p>On this page you can take a closer look on the Kevadra theme structure.</p>
+                <p>It has everything to create a fully functional website: a lot of functional pages, demo-pages for various types of businesses, carefully crafted functionality for an online-store.</p>
+                <a class="btn btn-primary btn-md" href="sitemap.html">View Page Demo</a>
+              </div>
+            </div>
+          </section><!--Sitemap Close-->
+          
+        </div>
+        <!--Page Content Close-->
+        
+          <!--Footer-->
+          <footer class="footer">
+            
+            <!-- Footer Subscribe -->
+            <div class="footer-subscribe-widget light-version">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p>Subscribe to our news. Don`t worry, we don`t spam you!</p>
+                  </div>
+                  <div class="col-md-5">
+                    <form class="validate" method="post" action="http://8guild.us3.list-manage1.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=06b7eb4e02" id="update-subscribe-form" name="subscribe-form" target="_blank" novalidate>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control" name="EMAIL" id="subscr-email" placeholder="Email" required>
+                        </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_06b7eb4e02" tabindex="-1" value=""></div>
+
+                        <div class="col-sm-4">
+                          <button type="submit" class="btn btn-transparent btn-md btn-primary">Subscribe</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container space-top">
+              <div class="row">
+                
+                <!--Featured Posts-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <h3>Kedavra</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+                
+                <!--Featured Posts-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <h4>Popular posts</h4>
+                  <div class="featured-post">
+                    <h5><a href="#">Omnis iste natus error sit dolor set amet</a></h5>
+                    <div class="meta group">
+                      <div class="right"><span class="text-muted">5 min read</span></div>
+                    </div>
+                  </div>
+                  <div class="featured-post">
+                    <h5><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
+                    <div class="meta group">
+                      <div class="right"><span class="text-muted">1 min read</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Flickr wiget -->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <div class="flickr-wiget">
+                    <h4>Flickr Widget</h4>
+
+                    <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=64742456@N00"></script>
+                  </div>
+                </div>
+                
+                <!--Contact Info-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <div class="contacts">
+                    <h4>Contact Info</h4>
+                    <h5>Address:</h5>
+                    <p>105448 Casa Blanca BLVD New York</p>
+                    <h5>Phone numbers:</h5>
+                    <p>+9 876 543 00 21<br/>+0 123 400 56 78</p>
+                    <h5>E-mail:</h5>
+                    <p><a href="mailto:info@your-domain.com">info@your-domain.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--Copyright-->
+            <div class="copyright text-center">
+              <div class="container">
+                <p class="pull-left"><a href="http://8guild.com/" target="_blank">8 Guild</a> - Quality premium themes build by creatives</p>
+
+                <div class="social-bar">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-github-alt"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer><!--Footer Close-->
+        
+        </div><!--Layout Close-->
+        
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div><!--Off-Canvas Close-->
+          
+    <!--Sticky Buttons-->
+    <div class="sticky-btns">
+      <form class="quick-contact" method="post" name="quick-contact">
+        <h3>Contact us</h3>
+        <div class="form-group">
+          <label for="qc-name">Full name</label>
+          <input class="form-control" type="text" name="qc-name" id="qc-name" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-email">Email</label>
+          <input class="form-control" type="email" name="qc-email" id="qc-email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-message">Your message</label>
+          <textarea class="form-control" name="qc-message" id="qc-message" placeholder="Enter your message" required></textarea>
+        </div>
+        <input class="btn btn-primary btn-block" type="submit" value="Send">
+      </form>
+      <span id="qcf-btn"><i class="fa fa-envelope"></i></span>
+      <span id="scrollTop-btn"><i class="fa fa-chevron-up"></i></span>
+    </div><!--Sticky Buttons Close-->
+    
+    <!--Javascript (jQuery) Libraries and Plugins-->
+		<script src="js/libs/jquery-1.11.1.min.js"></script>
+    <script src="js/libs/jquery.easing.min.js"></script>
+		<script src="js/plugins/bootstrap.min.js"></script>
+		<script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/utilities.js"></script>
+		<script src="js/plugins/foundation.min.js"></script>
+		<script src="js/plugins/jquery.placeholder.js"></script>
+    <script src="js/plugins/icheck.min.js"></script>
+		<script src="js/plugins/jquery.validate.min.js"></script>
+		<script src="js/plugins/waypoints.min.js"></script>
+   	<script src="js/plugins/isotope.min.js"></script>
+		<script src="js/plugins/masterslider.min.js"></script>
+		<script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/lightGallery.min.js"></script>
+		<script src="js/plugins/jquery.stellar.min.js"></script>
+    <script src="js/plugins/jquery.parallax.min.js"></script>
+		<script src="js/plugins/chart.min.js"></script>
+    <script src="js/plugins/jquery-numerator.js"></script>
+    <script src="js/plugins/jquery.countdown.min.js"></script>
+	  <script src="js/plugins/jquery.easypiechart.min.js"></script>
+    <script src="js/plugins/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/card.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body><!--Body Close-->
+</html>

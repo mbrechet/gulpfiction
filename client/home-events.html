@@ -1,0 +1,768 @@
+<!doctype html>
+<!--Conditionals for IE8-9 Support-->
+<!--[if IE]><html lang="en" class="ie"><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Kedavra - Multipurpose HTML5 Template</title>
+    
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Responsive Multipurpose HTML5 Template" />
+		<meta name="keywords" content="responsive html5 template, multipurpose, blog, portfolio, e-commerce, bootstrap 3, css, jquery, flat, modern" />
+		<meta name="author" content="8Guild" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Master Slider Styles-->
+    <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+    <!--Kedavra Stylesheet-->
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <!--Kedavra Color Scheme-->
+    <link class="color-scheme" href="css/colors/color-2f8cea.css" rel="stylesheet" media="screen">
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+    <!--Modernizr-->
+		<script src="js/libs/modernizr.custom.js"></script>
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+      <script src="js/plugins/respond.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <!--Body--> 
+  <body class="parallax animated fadeIn"><!--Add "parallax" class if you have elements on the page with parallax backgrounds. "fadeIn" class makes content fades in on loading-->
+  	
+    <!--Off-Canvas-->
+    <div class="off-canvas-wrap" data-offcanvas>
+    	<div class="inner-wrap">
+      
+      	<!--Off-Canvas Menu-->
+        <aside class="left-off-canvas-menu">
+        	<div class="mobile-navi">
+            <ul>
+            	<li class="current"><a class="scrollup" href="#">Home</a></li>
+            	<li><a class="scroll" data-offset-top="0" href="#schedule">Schedule</a></li>
+            	<li><a class="scroll" data-offset-top="0" href="#testimonials">Testimonials</a></li>
+            	<li><a class="scroll" data-offset-top="0" href="#venues">Venues</a></li>
+            	<li><a class="scroll" data-offset-top="0" href="#lectors">Lectors</a></li>
+              <li><a class="scroll" data-offset-top="0" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </aside><!--Off-Canvas Menu Close-->
+        
+        <!--Layout-->
+        <div class="site-layout"><!--If you add class "boxed" to .site-layout it wraps the whole document in a box, than you can simply add pattern background to body or leave it white. Please note in a "boxed" mode header doesn't stick to the top.-->
+                
+          <!--Fullscreen Hero-->
+          <!--Adding class "fullscreen" makes hero height equals window height-->
+          <section style="background-image:url(img/home/hero/event.jpg);" class="hero-static fullscreen no-space-bottom" data-stellar-background-ratio="0.5">
+          
+            <!--Event Info Block-->
+            <div class="overlay-block">
+              <div class="opacity-70">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <h1 class="bold-weight uppercase">Kedavra</h1>
+                      <h2 class="light-weight">Here goes event name or tagline</h2>
+                    </div>
+                  </div>
+                </div>
+                <!--Slide Up Toggle-->
+                <div id="slide-up-toggle"><i class="fa fa-angle-double-down"></i></div>
+              </div>
+              <div class="opacity-97 slide-up"><!--Adding Class 'slide-up' hiding content in mobile view and reveal (slide up) content on click-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <!--Countdown-->
+                      <div class="countdown smaller light align-left">
+                        <div class="timer" id="timer2"></div>
+                        <div class="group">
+                          <span>Days</span>
+                          <span>Hours</span>
+                          <span>Minutes</span>
+                          <span>Seconds</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <form method="post" name="event-registration" class="light-version">
+                        <div class="row">
+                          <div class="col-lg-7">
+                            <div class="form-group">
+                              <label class="sr-only" for="er_name">Name</label>
+                              <input type="text" class="form-control input-lg" name="er_name" id="er_name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="er_email">Email</label>
+                              <input type="email" class="form-control input-lg" name="er_email" id="er_email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="er_phone">Phone</label>
+                              <input type="text" class="form-control input-lg" name="er_phone" id="er_phone" placeholder="Phone" required>
+                            </div>
+                          </div>
+                          <div class="col-lg-5">
+                            <div class="form-group">
+                              <div class="select-style select-lg">
+                                <select name="er-plan" id="er-plan">
+                                  <option>Basic plan</option>
+                                  <option>Small business</option>
+                                  <option>Corporate plan</option>
+                                </select>
+                              </div>
+                            </div>
+                            <button class="submit-with-price" type="submit">
+                              <span class="price">25 $</span>
+                              <span class="text">Register</span>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </section><!--Fullscreen Hero Close-->
+        
+          <!--Header-->
+          <!--Scroller header is for one page layouts where navigation links are anchors to the relevant section of the page.
+          Please note in a "boxed" mode header doesn't stick to the top.-->
+          <header class="header scroller">
+            <div class="inner">
+              <div class="container group">
+              
+                <!--Logo-->
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="Kedavra"/></a>
+                
+                <!--Navigation Toggle-->
+                <div class="left-off-canvas-toggle" id="nav-toggle">
+                  <span></span>
+                </div>
+                
+                <!--Site Navigation-->
+                <div class="navigation">
+                  <!--Menu-->
+                  <nav class="menu scroll-menu"><!--Add ".scroll-menu" to the <nav> and ".scroll" to <a> to enable scrolling to anchor functionality-->
+                    <ul>
+                      <li class="active"><a class="scrollup" href="#">Home</a></li>
+                      <li><a class="scroll" data-offset-top="65" href="#schedule">Schedule</a></li><!--data-offset-top means offset of the element from window top in px-->
+                      <li><a class="scroll" data-offset-top="50" href="#testimonials">Testimonials</a></li>
+                      <li><a class="scroll" data-offset-top="55" href="#venues">Venues</a></li>
+                      <li><a class="scroll" data-offset-top="60" href="#lectors">Lectors</a></li>
+                      <li><a class="scroll" data-offset-top="30" href="#contacts">Contacts</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                
+                <!--Tools-->  
+                <div class="tools group">
+                  <a class="btn btn-primary" href="#">Buy Theme</a>
+                </div><!--Tools Close-->
+                
+              </div>
+            </div>
+            
+            <!--Quick Search-->
+            <form class="quick-search" method="get" autocomplete="off">
+              <div class="overlay"></div>
+              <input class="search-field" type="text" placeholder="Search">
+              <span>Press enter to search</span>
+            </form>
+            
+          </header><!--Header Close-->
+          
+          <!--Page Content--><!-- InstanceBeginEditable name="content" -->
+        <div class="page">
+        	
+          <!--Schedule-->
+          <section class="page-block space-bottom" id="schedule">
+          	<div class="container-fluid">
+            	<div class="page-heading center">
+            		<h2>Event Schedule</h2>
+                <h3>Event lasts one week. See the schedule below.<span></span></h3>
+            	</div>
+          		<div class="row">
+                
+                <!--Datepicker-->
+                <div class="col-lg-3 col-lg-push-9 space-top double-space-bottom">
+                  <input type="hidden" name="chosen_date" id="chosen_date">
+                	<div class="datePicker" id="datePicker"></div>
+                </div>
+                
+                <!--Schedule-->
+              	<div class="col-lg-9 col-lg-pull-3 schedule space-top space-bottom">
+                	<table>
+                    <tr>
+                      <th scope="col">&nbsp;</th>
+                      <th scope="col">09:00</th>
+                      <th scope="col">10:00</th>
+                      <th scope="col">11:00</th>
+                      <th scope="col">12:00</th>
+                      <th scope="col">13:00</th>
+                      <th scope="col">14:00</th>
+                      <th scope="col">15:00</th>
+                      <th scope="col">16:00</th>
+                      <th scope="col">17:00</th>
+                      <th scope="col">18:00</th>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Mo<span>nday</span>, 21</th>
+                      <td colspan="2"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Tu<span>esday</span>, 22</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td colspan="3"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td colspan="2"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">We<span>dnesday</span>, 23</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Th<span>ursday</span>, 24</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td colspan="3"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Fr<span>iday</span>, 25</th>
+                      <td>&nbsp;</td>
+                      <td colspan="2"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Sa<span>turday</span>, 26</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td colspan="3"><a class="event" href="#" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eius, beatae. Voluptate, quia, ipsam explicabo dolor sit amet consectetur.">Event Name<span>Event short description</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="day" scope="row">Su<span>nday</span>, 27</th>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          	</div>
+          </section><!--Schedule Close-->
+          
+          <!--Testimonials-->
+          <section class="page-block gray-bg no-padding-bottom" id="testimonials">
+          	<div class="container">
+              <h3 class="heading center space-top">Want to know what our participants say?<span></span></h3>
+            	<p class="text-center space-top">Eu brute mundi mea, ex illud salutandi hendrerit quo, eos eirmod electram definitionem ex.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <img class="center-block" src="img/clients/1.jpg" alt="Participants"/>
+            </div>
+          </section><!--Testimonials Close-->
+          
+          <!--Pricing Plans-->
+          <section class="page-block">
+            <div class="container">
+              <div class="page-heading center">
+                <h2>Pricing plans</h2>
+                <h3>Choose the best plan for you!<span></span></h3>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="pricing-plan type-3">
+                    <div class="price-title">
+                      <h4>From <span>9.99 $</span> / hour</h4>
+                    </div>
+                    <h3>Starter</h3>
+                    
+                    <div class="pricing-content">
+                      <ul class="list-unstyled">
+                        <li><b>20GB</b> filespace</li>
+                        <li><b>2 Inmail</b></li>
+                        <li>Support</li>
+                        <li><b>Hustle</b></li>
+                      </ul>
+
+                      <a class="btn btn-md btn-primary btn-center" href="#">Upgrade to Premium</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-plan type-3">
+                    <div class="price-title">
+                      <h4>From <span>39.99 $</span> / hour</h4>
+                    </div>
+                    <h3>Advanced</h3>
+                    
+                    <div class="pricing-content">
+                      <ul class="list-unstyled">
+                        <li><b>60GB</b> filespace</li>
+                        <li><b>8 Inmail</b></li>
+                        <li>Support</li>
+                        <li><b>Hustle</b></li>
+                      </ul>
+
+                      <a class="btn btn-md btn-primary btn-center" href="#">Upgrade to Premium</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pricing-plan type-3">
+                    <div class="price-title">
+                      <h4>From <span>49.99 $</span> / hour</h4>
+                    </div>
+                    <h3>Corporate</h3>
+                    
+                    <div class="pricing-content">
+                      <ul class="list-unstyled">
+                        <li><b>220GB</b> filespace</li>
+                        <li><b>22 Inmail</b></li>
+                        <li>Support</li>
+                        <li><b>Hustle</b></li>
+                      </ul>
+
+                      <a class="btn btn-md btn-primary btn-center" href="#">Upgrade to Premium</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><!--Pricing Plans Close-->
+          
+          <!--Venues / Tabs Widget-->
+          <section class="page-block gray-bg" id="venues">
+          	<div class="container">
+              <div class="page-heading center">
+                <h2>Event Venues</h2>
+                <h3>Venues never changed since 1995<span></span></h3>
+              </div>
+              <!--Nav Tabs-->
+              <ul class="nav-tabs" role="tablist">
+                <li class="active"><a href="#berlinTower" role="tab" data-toggle="tab"><span>01</span>Berlin Tower</a></li>
+                <li><a href="#plazaCenter" role="tab" data-toggle="tab"><span>02</span>Plaza Center</a></li>
+                <li><a href="#cityHall" role="tab" data-toggle="tab"><span>03</span>City Hall</a></li>
+              </ul>
+              <!--Tabs Content-->
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="berlinTower">
+                  <img src="img/home/deals-tabs/01.jpg" alt="Deal01"/>
+                  <div class="row double-space-top space-bottom">
+                  	<div class="col-md-3">
+                    	<h3 class="heading normalcase">Berlin Tower<span></span></h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  	<div class="col-md-5">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus, quis lorem ipsum tooltip luctus ligula. Curabitur laoreet fringilla lorem ipsum porta lorem ipsum. Glavrida dolor ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus.</p>
+                    </div>
+                  	<div class="col-md-4">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="plazaCenter">
+                	<img src="img/home/deals-tabs/02.jpg" alt="Deal02"/>
+                  <div class="row double-space-top space-bottom">
+                  	<div class="col-md-3">
+                    	<h3 class="heading normalcase">Plaza Center<span></span></h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  	<div class="col-md-5">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus, quis lorem ipsum tooltip luctus ligula. Curabitur laoreet fringilla lorem ipsum porta lorem ipsum. Glavrida dolor ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus.</p>
+                    </div>
+                  	<div class="col-md-4">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="cityHall">
+                	<img src="img/home/deals-tabs/03.jpg" alt="Deal03"/>
+                  <div class="row double-space-top space-bottom">
+                  	<div class="col-md-3">
+                    	<h3 class="heading normalcase">City Hall<span></span></h3>
+                      <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                  	<div class="col-md-5">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus, quis lorem ipsum tooltip luctus ligula. Curabitur laoreet fringilla lorem ipsum porta lorem ipsum. Glavrida dolor ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus.</p>
+                    </div>
+                  	<div class="col-md-4">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus vel leo placerat cursus. Nullam rutrum velit eget quam pretium vehicula. Maecenas enim velit. Maecenas eu metus vel leo placerat cursus. Curabitur quis rhoncus tellus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><!--Venues Close-->
+          
+          <!--Our Team / 3D Carousel-->
+          <section class="page-block" id="lectors">
+            <div class="container">
+              <div class="page-heading center">
+                <h2>Our team</h2>
+                <h3>BEST &amp; most experienced specialists<span></span></h3>
+              </div>
+              <!--Team Carousel-->
+              <div class="ms-staff-carousel">
+                <div class="master-slider" id="slider02">
+                  <div class="ms-slide">
+                    <img src="masterslider/blank.gif" data-src="img/team/doe.jpg" alt="Jonathan Doe"/> 
+                    <div class="ms-info">
+                      <h4>Jonathan Doe</h4>
+                      <h5>Marketing Director</h5>
+                      <div class="ms-socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                      </div>
+                    </div>    
+                  </div>
+                  <div class="ms-slide">
+                    <img src="masterslider/blank.gif" data-src="img/team/roe.jpg" alt="Alexander Roe"/> 
+                    <div class="ms-info">
+                      <h4>Alexander Roe</h4>
+                      <h5>Financial Director</h5>
+                      <div class="ms-socials">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                    </div>    
+                  </div>
+                  <div class="ms-slide">
+                    <img src="masterslider/blank.gif" data-src="img/team/dirk.jpg" alt="Dexter Dirk"/> 
+                    <div class="ms-info">
+                      <h4>Dexter Dirk</h4>
+                      <h5>Technical Director</h5>
+                      <div class="ms-socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                    </div>    
+                  </div>
+                  <div class="ms-slide">
+                    <img src="masterslider/blank.gif" data-src="img/team/smith.jpg" alt="William Smith"/> 
+                    <div class="ms-info">
+                      <h4>William Smith</h4>
+                      <h5>Art Director</h5>
+                      <div class="ms-socials">
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                    </div>    
+                  </div>
+                  <div class="ms-slide">
+                    <img src="masterslider/blank.gif" data-src="img/team/davis.jpg" alt="Susanna Davis"/> 
+                    <div class="ms-info">
+                      <h4>Susanna Davis</h4>
+                      <h5>Accounting Director</h5>
+                      <div class="ms-socials">
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="ms-staff-info" id="staff-info"></div>
+              </div>
+            </div>
+          </section><!--Our Team Close-->
+         
+          <!--Info Box Widget-->
+          <section class="info-box gray">
+            <div class="container space-top space-bottom">
+              <div class="">
+                <h4 class="light-color">Check out our new theme!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                <a class="btn btn-outlined btn-primary" style="margin:30px !important;" href="#">Buy Kedavra</a>
+                <a class="btn btn-primary" href="#">See More</a>
+              </div>
+            </div>
+          </section><!--Info Box Widget Close-->
+          
+          <!--Partners-->
+          <section class="page-block space-top">
+          	<div class="container">
+          		<div class="page-heading center">
+              	<h2>Our partners</h2>
+                <h3>The most respected compnies in the world<span></span></h3>
+              </div>
+              <!--Logo Carousel Widget-->
+              <div class="logo-carousel" data-auto-play="true" data-timeout="3000">
+              	<a href="#"><img src="img/logos/1.png" alt="BBC News"/></a>
+                <a href="#"><img src="img/logos/2.png" alt="The Gardian"/></a>
+                <a href="#"><img src="img/logos/3.png" alt="TNW"/></a>
+                <a href="#"><img src="img/logos/4.png" alt="Wired"/></a>
+                <a href="#"><img src="img/logos/5.png" alt="Mashable"/></a>
+                <a href="#"><img src="img/logos/6.png" alt="TEDx"/></a>
+              </div>
+          	</div>
+          </section><!--Partners Close-->
+          
+         <!--Google Map-->
+         <section class="google-map h-550 space-top" data-location="4120 Lenox Avenue, NY" data-zoom="12" id="contacts"><!--Insert Location in data-location, insert map zoom in data-zoom-->
+         	<div id="map-canvas"></div>
+         </section><!--Google Map Close-->
+         
+          <!--Contact Form-->
+          <section class="page-block space-top double-space-bottom">
+          	<div class="container">
+            	<div class="page-heading center">
+              	<h3 class="heading">Contact us for further information<span></span></h3>
+              </div>
+          		<div class="row">
+              	<div class="col-md-6 col-sm-6">
+                  <p>Ad tantas audiam euismod eum, vix elit forensibus cu. No nam nulla tempor officiis, eos id summo omnium, ei posse senserit sea. Ad tantas audiam euismod eum, vix elit forensibus cu. No nam nulla tempor officiis, eos id summo omnium, ei posse senserit sea.</p>
+
+                  <div class="row digits counters-v2">
+                    <div class="col-md-6 animated-digits">
+                      <div class="group">
+                        <i class="fa fa-instagram"></i>
+                        <span class="digit" data-number="15454">0</span>
+                        <div>counters</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 animated-digits">
+                      <div class="group">
+                        <i class="fa fa-gear"></i>
+                        <span class="digit" data-number="7488">0</span>
+                        <div>counters</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          			<div class="col-md-6 col-sm-6">
+                	<form method="post" class="contact-form">
+                  	<div class="row">
+                    	<div class="form-group col-md-6 col-sm-6">
+                        <label class="sr-only" for="name"></label>
+                        <input class="form-control input-lg" type="text" name="name" id="name" placeholder="First Name" required>
+                      </div>
+                    	<div class="form-group col-md-6 col-sm-6">
+                        <label class="sr-only" for="email"></label>
+                        <input class="form-control input-lg" type="email" name="email" id="email" placeholder="E-mail" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                    	<div class="form-group col-md-12 col-sm-12">
+                        <label class="sr-only" for="message"></label>
+                        <textarea class="form-control input-lg" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                      </div>
+                    </div>
+                    <input class="btn btn-md btn-primary btn-center" type="submit" value="Send message">
+                  </form>
+                </div>
+          		</div>
+          	</div>
+          </section><!--Contact Form Close-->
+          
+        </div>
+        <!--Page Content Close-->
+        
+          <!--Footer-->
+          <footer class="footer">
+            
+            <!-- Footer Subscribe -->
+            <div class="footer-subscribe-widget light-version">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p>Subscribe to our news. Don`t worry, we don`t spam you!</p>
+                  </div>
+                  <div class="col-md-5">
+                    <form class="validate" method="post" action="http://8guild.us3.list-manage1.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=06b7eb4e02" id="update-subscribe-form" name="subscribe-form" target="_blank" novalidate>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control" name="EMAIL" id="subscr-email" placeholder="Email" required>
+                        </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_06b7eb4e02" tabindex="-1" value=""></div>
+
+                        <div class="col-sm-4">
+                          <button type="submit" class="btn btn-transparent btn-md btn-primary">Subscribe</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container space-top">
+              <div class="row">
+                
+                <!--Featured Posts-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <h3>Kedavra</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+                
+                <!--Featured Posts-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <h4>Popular posts</h4>
+                  <div class="featured-post">
+                    <h5><a href="#">Omnis iste natus error sit dolor set amet</a></h5>
+                    <div class="meta group">
+                      <div class="right"><span class="text-muted">5 min read</span></div>
+                    </div>
+                  </div>
+                  <div class="featured-post">
+                    <h5><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
+                    <div class="meta group">
+                      <div class="right"><span class="text-muted">1 min read</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Flickr wiget -->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <div class="flickr-wiget">
+                    <h4>Flickr Widget</h4>
+
+                    <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=64742456@N00"></script>
+                  </div>
+                </div>
+                
+                <!--Contact Info-->
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                  <div class="contacts">
+                    <h4>Contact Info</h4>
+                    <h5>Address:</h5>
+                    <p>105448 Casa Blanca BLVD New York</p>
+                    <h5>Phone numbers:</h5>
+                    <p>+9 876 543 00 21<br/>+0 123 400 56 78</p>
+                    <h5>E-mail:</h5>
+                    <p><a href="mailto:info@your-domain.com">info@your-domain.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--Copyright-->
+            <div class="copyright text-center">
+              <div class="container">
+                <p class="pull-left"><a href="http://8guild.com/" target="_blank">8 Guild</a> - Quality premium themes build by creatives</p>
+
+                <div class="social-bar">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-github-alt"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer><!--Footer Close-->
+          
+				</div><!--Layout Close-->
+        
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div><!--Off-Canvas Close-->
+  
+    <!--Sticky Buttons-->
+    <div class="sticky-btns">
+      <form class="quick-contact" method="post" name="quick-contact">
+        <h3>Contact us</h3>
+        <div class="form-group">
+          <label for="qc-name">Full name</label>
+          <input class="form-control" type="text" name="qc-name" id="qc-name" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-email">Email</label>
+          <input class="form-control" type="email" name="qc-email" id="qc-email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-message">Your message</label>
+          <textarea class="form-control" name="qc-message" id="qc-message" placeholder="Enter your message" required></textarea>
+        </div>
+        <input class="btn btn-primary btn-block" type="submit" value="Send">
+      </form>
+      <span id="qcf-btn"><i class="fa fa-envelope"></i></span>
+      <span id="scrollTop-btn"><i class="fa fa-chevron-up"></i></span>
+    </div><!--Sticky Buttons Close-->
+          
+    <!--Javascript (jQuery) Libraries and Plugins-->
+		<script src="js/libs/jquery-1.11.1.min.js"></script>
+    <script src="js/libs/jquery.easing.min.js"></script>
+		<script src="js/plugins/bootstrap.min.js"></script>
+		<script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/utilities.js"></script>
+		<script src="js/plugins/foundation.min.js"></script>
+		<script src="js/plugins/jquery.placeholder.js"></script>
+    <script src="js/plugins/icheck.min.js"></script>
+		<script src="js/plugins/jquery.validate.min.js"></script>
+		<script src="js/plugins/waypoints.min.js"></script>
+   	<script src="js/plugins/isotope.min.js"></script>
+		<script src="js/plugins/masterslider.min.js"></script>
+		<script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/lightGallery.min.js"></script>
+		<script src="js/plugins/jquery.stellar.min.js"></script>
+    <script src="js/plugins/jquery.parallax.min.js"></script>
+		<script src="js/plugins/chart.min.js"></script>
+    <script src="js/plugins/jquery-numerator.js"></script>
+    <script src="js/plugins/jquery.countdown.min.js"></script>
+	  <script src="js/plugins/jquery.easypiechart.min.js"></script>
+    <script src="js/plugins/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/card.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body><!--Body Close-->
+</html>
