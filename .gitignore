@@ -18,9 +18,6 @@ coverage
 node_modules
 npm-debug.log
 
-client/css/styles.css
-client/fonts/bootstrap/glyphicons-halflings-regular.eot
-client/fonts/bootstrap/glyphicons-halflings-regular.svg
-client/fonts/bootstrap/glyphicons-halflings-regular.ttf
-client/fonts/bootstrap/glyphicons-halflings-regular.woff
-client/fonts/bootstrap/glyphicons-halflings-regular.woff2
+client/css/*
+client/fonts/*
+client/js/*

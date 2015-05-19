@@ -29,5 +29,9 @@
   "Tarantinotheque": {
     "dataSource": "db",
     "public": true
+  },
+  "Movie": {
+    "dataSource": "db",
+    "public": true
   }
 }
