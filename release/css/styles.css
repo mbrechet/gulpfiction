@@ -18724,5 +18724,23 @@ meta.foundation-data-attribute-namespace {
   .sticky-wrapper .header .logo img {
     max-width: none !important; }
 
-.hero-static h1 {
+.menu {
   font-weight: bold; }
+
+.hero-static h1 {
+  font-weight: bold !important; }
+
+.footer .footer-subscribe-widget, .footer .copyright {
+  background: #e22426 !important;
+  background-color: #e22426 !important; }
+.footer .footer-subscribe-widget .btn {
+  background: #fcd755 !important;
+  background-color: #fcd755 !important;
+  color: #333 !important; }
+
+.sticky-btns span {
+  background: #e22426 !important;
+  background-color: #e22426 !important; }
+  .sticky-btns span:hover {
+    background: #e22426 !important;
+    background-color: #e22426 !important; }
