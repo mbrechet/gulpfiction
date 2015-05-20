@@ -1,0 +1,27 @@
+.tatek-mini-img {
+	margin-left:25px;
+	width:15px;
+	height:15px;
+	display:inline-block;
+}
+
+.social-bar {
+  float: right !important;
+}
+.sticky-wrapper {
+	.header {
+		.inner {
+			background: #e22426 !important;
+			background-color: #e22426 !important;
+		}
+		.logo {
+			margin:10px 40px 0 0  !important;
+			img {
+				max-width: none !important;
+			}
+		}
+	}
+}
+.hero-static h1 {
+	font-weight: bold;
+}
