@@ -24,9 +24,6 @@
     "loopback#static": [
       {
         "params": "$!../client"
-      },
-      {
-        "params": "$!../client-src"
       }
       ]
   },
