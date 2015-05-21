@@ -21,3 +21,4 @@ npm-debug.log
 client/css/*
 client/fonts/*
 client/js/*
+client/js/plugins/*
