@@ -14,7 +14,7 @@
       "type": "string"
     },
     "cover": {
-      "type": "object",
+      "type": "string",
       "required": true
     }
   },
