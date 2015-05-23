@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 var config = {
 	bootstrapDir: './node_modules/bootstrap-sass',
@@ -29,10 +30,24 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(config.publicDir + '/fonts'));
 });
 
-gulp.task('js-build',function(){
-	return gulp.src('./client-src/js/**/*.js')
+gulp.task('external-lib',function(){
+	return gulp.src('./client-src/js/libs/*')
 	.pipe(uglify())
+	.pipe(gulp.dest(config.publicDir+'/js/libs'));
+});
+
+
+gulp.task('external-plugins',function(){
+	return gulp.src('./client-src/js/plugins/*')
+	.pipe(uglify())
+	.pipe(gulp.dest(config.publicDir+'/js/plugins'));
+});
+
+gulp.task('js-build',function(){
+	return gulp.src('./client-src/js/*')
+	.pipe(concat('scripts.js'))
+	.pipe(uglify({mangle:false}))
 	.pipe(gulp.dest(config.publicDir+'/js'));
 });
 
-gulp.task('default',['scss', 'fonts', "js-build"]);
+gulp.task('default',['scss', 'fonts', 'js-build', 'external-lib', 'external-plugins']);
