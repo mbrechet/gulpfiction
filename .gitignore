@@ -21,9 +21,4 @@ npm-debug.log
 client/css/*
 client/fonts/*
 client/js/*
-<<<<<<< HEAD
-client/js/scripts.js
-release/css/styles.css
-=======
-client/js/plugins/*
->>>>>>> origin/master
+
