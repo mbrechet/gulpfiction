@@ -7,7 +7,6 @@
 /*Document Ready*////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 jQuery(document).ready(function($) {
 	'use strict';
-	
 	/*Global Variables
 	*******************************************/
 	/// Header / Navigation Variables------------------------------------
@@ -32,7 +31,7 @@ jQuery(document).ready(function($) {
 	/// Hero Units Variables--------------------------------------------
 	var $heroFs = $('.hero-static.fullscreen');
 	var $heroFsInner = $('.hero-static.fullscreen .inner');
-	var $heroParallax = $('.hero-parallax')
+	var $heroParallax = $('.hero-parallax');
 	/// ----------------------------------------------------------------
 	
 	/// Forms Variables-------------------------------------------------
