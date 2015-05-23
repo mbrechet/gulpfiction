@@ -22,3 +22,6 @@ client/css/*
 client/fonts/*
 client/js/*
 
+
+client/js/scripts.js
+release/css/styles.css
