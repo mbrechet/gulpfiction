@@ -16,6 +16,10 @@
     "cover": {
       "type": "string",
       "required": true
+    },
+    "banner": {
+      "type": "string",
+      "required" : false
     }
   },
   "validations": [],
