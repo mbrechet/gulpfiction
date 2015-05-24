@@ -2,8 +2,9 @@
 
 Application about gulp for BreizhCamp 2015
 
-! Installation
+<h1>Installation</h1>
 
+<h2>Gulp</h2>
 Installer gulp de manière globale pour avoir le raccourcis global 'gulp'
 
 ```
@@ -17,13 +18,13 @@ npm install
 npm install --dev
 ```
 
-Compilre les css avec gup
+Compiler les css  et builder le projet avec gulp
 
 ```
 gulp
 ```
 
-! Démarrage
+<h1>Démarrage</h1>
 Pour lancer l'app, se placer à la racine dans une invite de commande puis entrer:
 node .
 
