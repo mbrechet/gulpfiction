@@ -3,6 +3,10 @@
     scope.gulpfiction.urls = scope.gulpfiction.urls || {};
     scope.gulpfiction.urls.ALL_MOVIES  = '/api/movies';
 
+    var getOneMovie = function () {
+
+    };
+
     var getAllMovies = function(){
         var promise = new Promise(function(resolve,reject){
             var xhr  = new XMLHttpRequest();
@@ -26,7 +30,7 @@
     var createHomeMovieItem = function(movie){
         var tpl = document.createElement('template');
         tpl.innerHTML = '<div class="fw-block-3">'+
-              '<a href="/movie.html#movieId='+movie.id+'">'+
+              '<a href="/movie/'+movie.id+'">'+
               '<img src="'+movie.cover+'" alt="'+movie.title+'">'+
               '  <span>'+movie.title+'</s+pan>'+
               '</a>'+
