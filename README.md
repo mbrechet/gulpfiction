@@ -37,9 +37,12 @@ Pour que les variables persistent, pensez les exporter dans le fichier .bashrc
 <h3>Sous window </h3>
 ```
 C:\Usersm\> set M2_HOME=<install_dir>apache-maven-3.3.1
-C:\Usersm\> set PATH=%PATH%;%M2_HOME%bin
+C:\Usersm\> set PATH=%PATH%;%M2_HOME%\bin
 ```
 Il faut ajouter la variable M2_HOME et modifier le path dans les variables d'environnement au niveau du panneau de configuration pour que la valeur persiste.
+
+Pour les tests de cette application on peut directement lancer <i>setJavaMavenEnv.bat</i>
+
 
 <h1>Démarrage</h1>
 Pour lancer l'app, se placer à la racine dans une invite de commande puis entrer:
