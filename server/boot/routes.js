@@ -11,7 +11,10 @@ module.exports = function(app) {
 			if (!err && movie) {
 				var html = fs.readFileSync('client/movie.html').toString();
 				html = html.replace("${movieTitle}", movie.title);
+				html = html.replace("${movieProductionDate}", movie.productionDate)
+				html = html.replace("${movieMainActors}", movie.mainActors)
 				html = html.replace("${movieBannerUrl}", movie.banner);
+				html = html.replace("${movieDescription}", movie.description)
 				res.send(html);
 			}
 		});
