@@ -9,7 +9,6 @@
 *.swo
 *.swp
 *.tgz
-*.xml
 .DS_Store
 .idea
 .project
@@ -25,3 +24,7 @@ client/js/*
 
 
 client/css/styles.css
+target/Taranthontheque-0.0.1.jar
+target/lint.cache
+target/maven-archiver/pom.properties
+release/css/styles.css

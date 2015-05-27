@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gulpfiction</groupId>
+  <artifactId>Taranthontheque</artifactId>
+  <version>0.0.1</version>
+
+
+  
+  
+  <build>
+    <plugins>
+      <!-- check error on code on validate phase -->
+      <plugin>
+        <groupId>com.cj.jshintmojo</groupId>
+         <artifactId>jshint-maven-plugin</artifactId>
+         <version>1.6.0</version>
+         <executions>
+             <execution>
+                <phase>validate</phase>
+                <goals>
+                    <goal>lint</goal>
+                </goals>
+             </execution>
+        </executions>
+        <configuration>
+            <reporter>jslint</reporter>
+            <reportFile>target/jshint.xml</reportFile>
+            <failOnError>true</failOnError>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
+  <!-- dependencies -->
+  <dependencies>
+    <dependency>
+        <groupId>com.cj.jshintmojo</groupId>
+        <artifactId>jshint-maven-plugin</artifactId>
+        <version>1.6.0</version>
+    </dependency>
+  </dependencies>
+
+
+</project>

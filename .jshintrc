@@ -18,4 +18,9 @@
   "trailing": true,
   "sub": true,
   "maxlen": 80
+
+  "globals": { 
+     "require": false,
+     "$": true
+  }
 }
