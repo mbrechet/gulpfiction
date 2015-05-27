@@ -1,6 +1,15 @@
 # création du pom par défaut
 
-```
-mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  -DgroupId=com.gulpfiction  -DartifactId=tranthinotheque  -Dversion=0.0.1 -Dpackaging=tar -DgeneratePom=true
-```
+A la main on créé le fichier pom.xml minimal contenant un artifactId, un nom pour notre application et un numéro de version
+
+## quelles phases de maven ?
+- validate : pour checker que notre code ne contient aucune erreurs (jshint...) -> jshint-maven-plugin
+- compile : on va générer les fichiers mimifiés avec uglify et compiler nos fichier scss en css
+- test : passage des test unitaire
+- package : génération d'une archive (tag, ou zip)
+- integration-test : déploie les livrable sur le serveur d'intégration
+- deploy : met à disposition du public notre livrable (sur un repos bower ou node ???)
+
+Le clean supprime l'archive et les fichiers générés
+
                                                                             
