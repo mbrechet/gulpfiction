@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var del = require('del');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
 
 var config = {
@@ -12,10 +12,7 @@ var config = {
 	releaseDir: './release/'
 };
 
-gulp.task('clean', function(){
-	return gulp.src(config.publicDir+'/**/*')
-        .pipe(clean({force: true}));
-});
+gulp.task('clean', del.bind(null, [config.publicDir], {dot: true}));
 
 gulp.task('image', function(){
 	return gulp.src(config.sourceDir + '/img/**/*')
@@ -67,8 +64,9 @@ gulp.task('js-build',function(){
 	.pipe(gulp.dest(config.publicDir+'/js'));
 });
 
-gulp.task('default','clean',function(callback){
+gulp.task('default',function(callback){
 	runSequence(
+	'clean',
 	'image',
 	'html', 
 	'scss', 
