@@ -4,11 +4,29 @@
   <artifactId>Taranthontheque</artifactId>
   <version>0.0.1</version>
 
-
+ 
   
   
   <build>
     <plugins>
+
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.6.1</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>${basedir}/client</directory>
+              <includes>
+                <include>**/*</include>
+              </includes>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+
+
       <!-- check error on code on validate phase -->
       <plugin>
         <groupId>com.cj.jshintmojo</groupId>
