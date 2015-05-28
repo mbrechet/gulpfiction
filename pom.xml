@@ -25,7 +25,7 @@
         <configuration>
             <reporter>jslint</reporter>
             <reportFile>target/jshint.xml</reportFile>
-            <failOnError>true</failOnError>
+            <failOnError>false</failOnError>
         </configuration>
       </plugin>
     </plugins>
