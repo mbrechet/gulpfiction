@@ -67,9 +67,8 @@ gulp.task('js-build',function(){
 	.pipe(gulp.dest(config.publicDir+'/js'));
 });
 
-gulp.task('default',function(callback){
+gulp.task('default','clean',function(callback){
 	runSequence(
-	'clean',
 	'image',
 	'html', 
 	'scss', 

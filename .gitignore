@@ -18,7 +18,7 @@ node_modules
 npm-debug.log
 
 
-client/*
+client/**/*
 
 target/Taranthontheque-0.0.1.jar
 target/lint.cache
