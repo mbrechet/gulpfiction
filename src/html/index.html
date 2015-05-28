@@ -1,0 +1,303 @@
+<!doctype html>
+<!--Conditionals for IE8-9 Support-->
+<!--[if IE]><html lang="en" class="ie"><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>GulpFiction - La tarantinothèque</title>
+    
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Responsive Multipurpose HTML5 Template" />
+	<meta name="keywords" content="responsive html5 template, multipurpose, blog, portfolio, e-commerce, bootstrap 3, css, jquery, flat, modern" />
+	<meta name="author" content="8Guild" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Master Slider Styles-->
+    <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+    <!--Kedavra Stylesheet-->
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <!--Kedavra Color Scheme-->
+    <link class="color-scheme" href="css/colors/color-2f8cea.css" rel="stylesheet" media="screen">
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+    <!--Modernizr-->
+		<script src="js/libs/modernizr.custom.js"></script>
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+      <script src="js/plugins/respond.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <!--Body--> 
+  <body class="parallax animated fadeIn"><!--Add "parallax" class if you have elements on the page with parallax backgrounds. "fadeIn" class makes content fades in on loading-->
+        	
+        <!--Layout-->
+        <div class="site-layout"><!--If you add class "boxed" to .site-layout it wraps the whole document in a box, than you can simply add pattern background to body or leave it white. Please note in a "boxed" mode header doesn't stick to the top.-->
+        
+          <!--Header Toolbar-->
+          <div class="header-toolbar">
+            <div class="container">
+              <div class="cont-info">
+                <div><i class="fa fa-map-marker"></i>Breizhcamp 2015 - Rennes - France <img src="img/logo-breizhcamp.png" class="tatek-mini-img" /></div>
+              </div>
+              <div class="social-bar">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-github-alt"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>             
+            </div>
+          </div><!--Header Toolbar Close-->
+          
+          <!--Header-->
+          <header class="header sticky"><!--Adding class "sticky" to header enables its pinning to top on scroll. Please note in a "boxed" mode header doesn't stick to the top.-->
+            <div class="inner">
+              <div class="container group">
+              
+                <!--Logo-->
+                <a class="logo" href="index.html"><img src="img/logo-gulp-fiction.png" alt="Gulp fiction"/></a>
+                
+                <!--Navigation Toggle-->
+                <div class="left-off-canvas-toggle" id="nav-toggle">
+                  <span></span>
+                </div>
+                
+                <!--Site Navigation-->
+                <div class="navigation">
+                  <!--Menu-->
+                  <nav class="menu">
+                    <ul>
+                      <li><a href="/">Ma Tarantinoth&egrave;que</a></li>
+                      <li><a href="blog-grid-sr.html">Autres films</a></li>
+                      <li><a href="shop-grid-1-big-banner.html">La selection de Tarantino</a> </li>                   
+                   
+                    </ul>
+                  </nav>
+
+                  <!--Search-->
+                  <div class="search"><i class="flaticon-search100"></i></div>
+                </div>                             
+                
+              </div>
+            </div>
+            
+            <!--Quick Search-->
+            <form class="quick-search" method="get" autocomplete="off">
+              <div class="overlay"></div>
+              <input class="search-field" type="text" placeholder="Search">
+              <span>Press enter to search</span>
+            </form>
+            
+          </header><!--Header Close-->
+          
+          <!--Page Content--><!-- InstanceBeginEditable name="content" -->
+        <div class="page">
+        	
+          <!--Hero Static-->
+          <section style="background-image: url(img/home/hero/fullscreen/01.jpg);" class="hero-static" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="inner">
+              <div class="content">
+                <div class="container">
+                  <h1>Utiliser Gulp en condition r&eacute;elle :</h1>
+                  <h2>Builder ma propre tarantinoth&egrave;que</h2>
+                  <h3>Avec Matthieu Brechet et Lo&iuml;c Truchot</h3>
+                </div>
+              </div>
+            </div>
+          </section><!--Hero Static Close-->
+          
+
+          <section class="fw-grid-gallery" id="movieListContainer">
+<!--             <div class="fw-block-3">
+              <a href="home-business-law.html">
+                <img src="img/home/home-screens/1.jpg" alt="">
+                <span>Réservoir Dogs</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-business-real-estate.html">
+                <img src="img/home/home-screens/2.jpg" alt="">
+                <span>Pulp Fiction</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-portfolio-photographer.html">
+                <img src="img/home/home-screens/3.jpg" alt="">
+                <span>Jacky Brown</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-portfolio-musician.html">
+                <img src="img/home/home-screens/4.jpg" alt="">
+                <span>Kill Bill 1</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-blog-personal.html">
+                <img src="img/home/home-screens/5.jpg" alt="">
+                <span>Kill Bill 2</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-blog-corporate.html">
+                <img src="img/home/home-screens/6.jpg" alt="">
+                <span>Boulevard de la mort</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-shop-catalog.html">
+                <img src="img/home/home-screens/7.jpg" alt="">
+                <span>Inglourious Basterds</span>
+              </a>
+            </div>
+            <div class="fw-block-3">
+              <a href="home-shop-featured-product.html">
+                <img src="img/home/home-screens/8.jpg" alt="">
+                <span>Django Unchained</span>
+              </a>
+            </div>  -->          
+
+          </section>
+
+          <!--Shop Layouts-->
+          <section class="page-block gray-bg">
+          	<div class="container">
+            	<div class="page-heading center animation" data-animation="fadeInUp">
+              	<h2 class="animation" data-animation="fadeInUp">Qui est Quentin Tarantino ?</h2>
+                <h3 class="animation" data-animation="fadeInUp">Tout savoir sur le r&eacute;alisateur, sc&eacute;nariste, producteur et acteur am&eacute;ricain<span></span></h3>
+              </div>
+
+              <!--Tabs Content-->
+              <div class="tab-content">
+<p>Quentin Tarantino, n&eacute; le 27 mars 1963 &agrave; Knoxville dans le Tennessee, est un r&eacute;alisateur, sc&eacute;nariste, producteur et acteur am&eacute;ricain. Il se fait conna&icirc;tre en tant que r&eacute;alisateur de films ind&eacute;pendants avec ses deux premiers films, Reservoir Dogs (1992) et Pulp Fiction (1994) et remporte pour ce dernier la Palme d'or &agrave; Cannes. Apr&egrave;s une &eacute;clipse de six ans, il effectue son grand retour avec les deux volets de Kill Bill (2003 et 2004). Ses deux derniers films, Inglourious Basterds (2009) et Django Unchained (2012) sont ses plus grands succ&egrave;s commerciaux internationaux.</p>
+
+<p>L'&#339;uvre de Tarantino d&eacute;note une connaissance encyclop&eacute;dique du cin&eacute;ma. Son style se reconna&icirc;t par sa narration postmoderne et non lin&eacute;aire, ses dialogues travaill&eacute;s souvent &eacute;maill&eacute;s de r&eacute;f&eacute;rences &agrave; la culture populaire, et ses sc&egrave;nes hautement esth&eacute;tiques mais d'une violence extr&ecirc;me, inspir&eacute;es de films d'exploitation, d'arts martiaux ou de western spaghetti. Ayant re&ccedil;u une formation d'acteur, il interpr&egrave;te fr&eacute;quemment de petits r&ocirc;les dans ses propres films, comme ceux de M. Brown dans Reservoir Dogs, Jimmie dans Pulp Fiction, Warren dans Boulevard de la mort ou encore un employ&eacute; de compagnie mini&egrave;re dans Django Unchained.</p>
+
+<p>Tarantino a cr&eacute;&eacute; pour Pulp Fiction la soci&eacute;t&eacute; de production A Band Apart, dont le nom est un hommage au film Bande &agrave; part de Jean-Luc Godard alors que son logo reprend quant &agrave; lui les personnages en costumes noirs de Reservoir Dogs. Il collabore r&eacute;guli&egrave;rement avec son ami r&eacute;alisateur Robert Rodriguez.</p>
+              </div>        
+              
+          
+          <section class="space-top">
+            <div class="container">
+              <div class="row space-top">
+                <div class="col-md-12">
+                  <div class="page-heading center animation" data-animation="fadeIn"><h3>Des outils pour g&eacute;n&eacute;rer cette application<span></span></h3></div>
+                  <div class="col-md-3 col-sm-6 animation" data-animation="zoomIn">
+                    <img style="margin-bottom: 12px;" class="center-block" src="img/home/features/less.png" alt="LESS"/>
+                    <h5 class="text-center bold-weight uppercase space-bottom">LESS preprocessor</h5>
+                  </div>
+                  <div class="col-md-3 col-sm-6 animation" data-animation="zoomIn">
+                    <img style="margin-bottom: 12px;" class="center-block" src="img/home/features/master.png" alt="Master Slider"/>
+                    <h5 class="text-center bold-weight uppercase space-bottom">Premium Master Slider</h5>
+                  </div>
+                  <div class="col-md-3 col-sm-6 animation" data-animation="zoomIn">
+                    <img style="margin-bottom: 12px;" class="center-block" src="img/home/features/retina.png" alt="Retina Ready"/>
+                    <h5 class="text-center bold-weight uppercase space-bottom">Retina Ready</h5>
+                  </div>
+                  <div class="col-md-3 col-sm-6 animation" data-animation="zoomIn">
+                    <img style="margin-bottom: 12px;" class="center-block" src="img/home/features/icons.png" alt="Font icons"/>
+                    <h5 class="text-center bold-weight uppercase space-bottom">Material Design Font Icons</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+       
+        </div>
+        <!--Page Content Close-->
+        
+          <!--Footer-->
+          <footer class="footer">
+            
+            <!-- Footer Subscribe -->
+            <div class="footer-subscribe-widget light-version">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p>Toutes les actus de Tarantino via la Newsletter !</p>
+                  </div>
+                  <div class="col-md-5">
+                    <form class="validate" method="post" action="http://8guild.us3.list-manage1.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=06b7eb4e02" id="update-subscribe-form" name="subscribe-form" target="_blank" novalidate>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control" name="EMAIL" id="subscr-email" placeholder="Email" required>
+                        </div>
+
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_06b7eb4e02" tabindex="-1" value=""></div>
+
+                        <div class="col-sm-4">
+                          <button type="submit" class="btn btn-transparent btn-md btn-primary">Souscrire</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+          </footer><!--Footer Close-->
+        
+        </div><!--Layout Close-->
+        
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div><!--Off-Canvas Close-->
+          
+    <!--Sticky Buttons-->
+    <div class="sticky-btns">
+      <form class="quick-contact" method="post" name="quick-contact">
+        <h3>Contact us</h3>
+        <div class="form-group">
+          <label for="qc-name">Full name</label>
+          <input class="form-control" type="text" name="qc-name" id="qc-name" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-email">Email</label>
+          <input class="form-control" type="email" name="qc-email" id="qc-email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="qc-message">Your message</label>
+          <textarea class="form-control" name="qc-message" id="qc-message" placeholder="Enter your message" required></textarea>
+        </div>
+        <input class="btn btn-primary btn-block" type="submit" value="Send">
+      </form>
+      <span id="qcf-btn"><i class="fa fa-envelope"></i></span>
+      <span id="scrollTop-btn"><i class="fa fa-chevron-up"></i></span>
+    </div><!--Sticky Buttons Close-->
+    
+    <!--Javascript (jQuery) Libraries and Plugins-->
+		<script src="js/libs/jquery-1.11.3.js"></script>
+    <script src="js/libs/jquery.easing.js"></script>
+		<script src="js/plugins/bootstrap.min.js"></script>
+		<script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/utilities.js"></script>
+		<script src="js/plugins/foundation.min.js"></script>
+		<script src="js/plugins/jquery.placeholder.js"></script>
+    <script src="js/plugins/icheck.min.js"></script>
+		<script src="js/plugins/jquery.validate.min.js"></script>
+		<script src="js/plugins/waypoints.min.js"></script>
+   	<script src="js/plugins/isotope.min.js"></script>
+		<script src="js/plugins/masterslider.min.js"></script>
+		<script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/lightGallery.min.js"></script>
+		<script src="js/plugins/jquery.stellar.min.js"></script>
+    <script src="js/plugins/jquery.parallax.min.js"></script>
+		<script src="js/plugins/chart.min.js"></script>
+    <script src="js/plugins/jquery-numerator.js"></script>
+    <script src="js/plugins/jquery.countdown.min.js"></script>
+	  <script src="js/plugins/jquery.easypiechart.min.js"></script>
+    <script src="js/plugins/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/card.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body><!--Body Close-->
+</html>
