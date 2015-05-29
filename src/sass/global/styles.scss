@@ -1,0 +1,54 @@
+/*
+ *Kedabra HTML5 Multipurpose Template Styles v2.0
+ *Copyright 2015 8Guild.com
+ */
+
+
+ 
+//Import Google Fonts (Open Sans) 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+
+@import "bootstrap";
+@import "bootstrap/theme";
+
+// //Import FontAwesome 4.1.0
+@import "../variables";
+@import "../font-awesome/font-awesome";
+
+// //Import Kedavra Icons
+@import "../icons/flaticon"; 
+
+// //Animations
+@import "../animations/animate"; 
+
+// //iHover
+@import "../ihover/ihover"; 
+
+// //Light Gallery Plugin
+@import "../lightgallery/lightgallery";
+
+// //Interactive Credit Card
+@import "../card/card";
+
+//Core Variables and Mixins
+@import "../mixins";
+
+// //Core CSS
+@import "../all/scaffolding";
+@import "../all/type";
+@import "../all/buttons";
+@import "../all/forms"; 
+
+// Components
+@import "../all/header";
+@import "../all/home";
+@import "../all/navi";
+@import "../all/footer";
+@import "../all/shop";
+@import "../all/blog";
+@import "../all/sidebar";
+@import "../all/pages";
+@import "../all/widgets";
+@import "../all/modals";
+@import "../all/tatek";

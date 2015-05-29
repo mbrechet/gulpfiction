@@ -157,9 +157,9 @@ $footer-bg: $gray-lighter;
 
 //-- Media queries breakpoints
 //------------------------------------------------------
-$menu-collapse:	 #{"only screen and (max-width: 1024px)"};
-$desktop:   		 #{"only screen and (max-width: 1200px)"};
-$tablet-land:    #{"only screen and (max-width: 991px)"};
-$tablet-port:    #{"only screen and (max-width: 768px)"};
-$mobile-land:		 #{"only screen and (max-width: 480px)"};
-$mobile-port:		 #{"only screen and (max-width: 360px)"};
+$menu-collapse:	"max-width: 1024px";
+$desktop:   		 "max-width: 1200px";
+$tablet-land:   "max-width: 991px";
+$tablet-port:   "max-width: 768px";
+$mobile-land:		"max-width: 480px";
+$mobile-port:		"max-width: 360px";

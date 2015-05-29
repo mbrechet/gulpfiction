@@ -20,7 +20,5 @@ npm-debug.log
 
 client/**/*
 
-target/Taranthontheque-0.0.1.jar
-target/lint.cache
-target/maven-archiver/pom.properties
-release/css/styles.css
+target/**/*
+release/**/*

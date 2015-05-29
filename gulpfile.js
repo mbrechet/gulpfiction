@@ -26,7 +26,7 @@ gulp.task('html', function(){
 
 // scss link
 gulp.task('scss',function(){
-	return gulp.src('./src/sass/styles.scss')
+	return gulp.src('./src/sass/global/styles.scss')
 	.pipe(sass({
 		includePaths:[config.bootstrapDir+ '/assets/stylesheets'],
 		indentSynthax:true,

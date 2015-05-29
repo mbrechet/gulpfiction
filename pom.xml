@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gulpfiction</groupId>
-  <artifactId>Taranthontheque</artifactId>
+  <artifactId>Tarantinotheque</artifactId>
   <version>0.0.1</version>
 
  
@@ -9,7 +9,7 @@
   
   <build>
     <plugins>
-
+      <!-- clean directories -->
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <version>2.6.1</version>
@@ -46,19 +46,47 @@
             <failOnError>false</failOnError>
         </configuration>
       </plugin>
+
+      <!-- build css -->
+      <plugin>
+          <groupId>nl.geodienstencentrum.maven</groupId>
+          <artifactId>sass-maven-plugin</artifactId>
+          <version>2.5</version>
+          <executions>
+              <execution>
+                <phase>compile</phase>
+                <goals>
+                  <goal>update-stylesheets</goal>
+                </goals>
+                <configuration>
+                  <resources>
+                    <resource>
+                      <source>
+                        <directory>${basedir}/node_modules/bootstrap-sass/assets/stylesheets</directory>
+                        <includes>
+                          <include>*.scss</include>
+                        </includes>
+                        <excludes />
+                      </source>
+                      <destination>basedir}/client/css</destination>
+                    </resource>
+                    <resource>
+                      <source>
+                        <directory>${basedir}/src/sass/global/</directory>
+                        <includes>
+                          <include>*.scss</include>
+                        </includes>
+                      </source>
+                      <destination>${basedir}/client/css</destination>
+                    </resource>
+                  </resources>
+                </configuration>
+              </execution>
+          </executions> 
+      </plugin>
     </plugins>
   </build>
 
-
-
-  <!-- dependencies -->
-  <dependencies>
-    <dependency>
-        <groupId>com.cj.jshintmojo</groupId>
-        <artifactId>jshint-maven-plugin</artifactId>
-        <version>1.6.0</version>
-    </dependency>
-  </dependencies>
 
 
 </project>
