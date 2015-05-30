@@ -4,7 +4,7 @@ A la main on créé le fichier pom.xml minimal contenant un artifactId, un nom p
 
 ## quelles phases de maven ?
 - validate : pour checker que notre code ne contient aucune erreurs (jshint...) -> jshint-maven-plugin
-- compile : on va générer les fichiers mimifiés avec uglify et compiler nos fichier scss en css
+- compile : on va générer les fichiers mimifiés avec uglify et compiler nos fichiers scss en css
 - test : passage des test unitaire
 - package : génération d'une archive (tag, ou zip)
 - integration-test : déploie les livrable sur le serveur d'intégration

@@ -6,6 +6,14 @@
 
  
   
+<pluginRepositories>
+  <pluginRepository>
+    <id>uglifyjs-maven-plugin</id>
+    <url>https://raw.github.com/tqh/uglifyjs-maven-plugin/master/repo</url>
+  </pluginRepository>
+</pluginRepositories>
+
+
   
   <build>
     <plugins>
@@ -84,6 +92,126 @@
               </execution>
           </executions> 
       </plugin>
+
+
+      <!-- copy html -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-html</id>
+            <!-- here the phase you need -->
+            <phase>compile</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/client</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/src/html</directory>
+                  
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- copy images -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-images</id>
+            <!-- here the phase you need -->
+            <phase>compile</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/client/img</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/src/img</directory>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- copy fonts -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.7</version>
+        <executions>
+          <execution>
+            <id>copy-fonts</id>
+            <!-- here the phase you need -->
+            <phase>compile</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/client/fonts</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}/node_modules/bootstrap-sass/assets/fonts</directory>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- build lib js -->
+        <plugin>
+            <groupId>net.tqh.plugins</groupId>
+            <artifactId>uglifyjs-maven-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+                <execution>
+                    <id>uglify-lib</id>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>uglify</goal>
+                    </goals>
+                    <configuration>
+                        <skip>false</skip>
+                        <sourceDirectory>${basedir}/src/js/libs</sourceDirectory>
+                        <outputDirectory>${basedir}/client/js/libs</outputDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+         <!-- build plugins js -->
+        <plugin>
+            <groupId>net.tqh.plugins</groupId>
+            <artifactId>uglifyjs-maven-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+                <execution>
+                    <id>uglify-plugin</id>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>uglify</goal>
+                    </goals>
+                    <configuration>
+                        <skip>false</skip>
+                        <sourceDirectory>${basedir}/src/js/plugins</sourceDirectory>
+                        <outputDirectory>${basedir}/client/js/plugins</outputDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+
+
+
     </plugins>
   </build>
 
