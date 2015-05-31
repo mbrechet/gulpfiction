@@ -1,3 +1,4 @@
+var fs = require('fs');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var del = require('del');
@@ -12,17 +13,34 @@ var config = {
 	releaseDir: './release/'
 };
 
+/*var tasks = [
+	'clean',
+	'image',
+	'html', 
+	'scss', 
+	'fonts', 
+	'external-lib', 
+	'external-plugins', 
+	'js-build'
+];
+
+
+// check all individual task-file in tasks folder and create a gulp-task (run-sequence friendly) with it
+tasks.forEach(function (task) {
+	gulp.task(task, require('tasks/' + task));
+});*/
+
 gulp.task('clean', del.bind(null, [config.publicDir], {dot: true}));
 
 gulp.task('image', function(){
 	return gulp.src(config.sourceDir + '/img/**/*')
     .pipe(gulp.dest(config.publicDir + '/img'));
-})
+});
 
 gulp.task('html', function(){
 	return gulp.src(config.sourceDir+'/html/**/*')
-	.pipe(gulp.dest(config.publicDir+'/'))
-})
+	.pipe(gulp.dest(config.publicDir+'/'));
+});
 
 // scss link
 gulp.task('scss',function(){
@@ -40,7 +58,10 @@ gulp.task('scss',function(){
 
 // fonts link
 gulp.task('fonts', function() {
-    return gulp.src(config.bootstrapDir + '/assets/fonts/**/*')
+    return gulp.src([
+    		config.bootstrapDir + '/assets/fonts/**/*', 
+    		config.sourceDir + '/fonts/**/*'
+    	])
     .pipe(gulp.dest(config.publicDir + '/fonts'));
 });
 

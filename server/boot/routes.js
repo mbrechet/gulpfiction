@@ -10,14 +10,14 @@ module.exports = function(app) {
 		app.models.Movie.findById(id, function (err, movie) {
 			if (!err && movie) {
 				var html = fs.readFileSync('client/movie.html').toString();
-				html = html.replace("${movieTitle}", movie.title);
-				html = html.replace("${movieProductionDate}", movie.productionDate)
-				html = html.replace("${movieMainActors}", movie.mainActors)
-				html = html.replace("${movieBannerUrl}", movie.banner);
-				html = html.replace("${movieDescription}", movie.description)
+				html = html.replace(/\${movieTitle\}/g, movie.title);
+				html = html.replace(/\$\{movieProductionDate\}/g, movie.productionDate);
+				html = html.replace(/\$\{movieMainActors\}/g, movie.mainActors);
+				html = html.replace(/\$\{movieBannerUrl\}/g, movie.banner);
+				html = html.replace(/\$\{movieDescription\}/g, movie.description);
 				res.send(html);
 			}
 		});
 	  	
 	});
-}
+};
