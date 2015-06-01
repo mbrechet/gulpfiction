@@ -1,88 +1,47 @@
 var fs = require('fs');
+var path = require('path');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var del = require('del');
-var uglify = require('gulp-uglify');
+
 var concat = require('gulp-concat');
+var gutil = require('gulp-util');
 var runSequence = require('run-sequence');
 
-var config = {
-	bootstrapDir: './node_modules/bootstrap-sass',
-	publicDir: './client',
-	sourceDir: './src',
-	releaseDir: './release/'
+console.log(__dirname);
+global.dir = {
+	bootstrap: path.join(__dirname, 'node_modules', 'bootstrap-sass'),
+	client: path.join(__dirname, 'client'),
+	sources: path.join(__dirname, 'src'),
+	release: path.join(__dirname, 'release')
 };
 
-/*var tasks = [
-	'clean',
-	'image',
+
+var tasks = [
+/*	'clean',	*/
 	'html', 
 	'scss', 
 	'fonts', 
 	'external-lib', 
 	'external-plugins', 
+	'image',
 	'js-build'
 ];
 
+//create a task directly in gulpfile
+gulp.task('clean', function () {
+	return function (done) {
+		del(global.dir.client, {
+			force: true,
+			dot: true
+		},
+		done);
+	};
+});
 
-// check all individual task-file in tasks folder and create a gulp-task (run-sequence friendly) with it
+//OR check all individual task-file in tasks folder, and create a gulp-task with it
 tasks.forEach(function (task) {
-	gulp.task(task, require('tasks/' + task));
-});*/
-
-gulp.task('clean', del.bind(null, [config.publicDir], {dot: true}));
-
-gulp.task('image', function(){
-	return gulp.src(config.sourceDir + '/img/**/*')
-    .pipe(gulp.dest(config.publicDir + '/img'));
-});
-
-gulp.task('html', function(){
-	return gulp.src(config.sourceDir+'/html/**/*')
-	.pipe(gulp.dest(config.publicDir+'/'));
-});
-
-// scss link
-gulp.task('scss',function(){
-	return gulp.src('./src/sass/global/styles.scss')
-	.pipe(sass({
-		includePaths:[config.bootstrapDir+ '/assets/stylesheets'],
-		indentSynthax:true,
-		errLogToConsole:true
-	})).pipe(
-		gulp.dest(config.publicDir+'/css')
-	).pipe(
-		gulp.dest(config.releaseDir+'/css')
-	);
-});
-
-// fonts link
-gulp.task('fonts', function() {
-    return gulp.src([
-    		config.bootstrapDir + '/assets/fonts/**/*', 
-    		config.sourceDir + '/fonts/**/*'
-    	])
-    .pipe(gulp.dest(config.publicDir + '/fonts'));
-});
-
-gulp.task('external-lib',function(){
-	return gulp.src(config.sourceDir+'/js/libs/*')
-	.pipe(uglify())
-	.pipe(gulp.dest(config.publicDir+'/js/libs'));
-});
-
-
-gulp.task('external-plugins',function(){
-	return gulp.src(config.sourceDir+'/js/plugins/*')
-	.pipe(uglify())
-	.pipe(gulp.dest(config.publicDir+'/js/plugins'));
-});
-
-gulp.task('js-build',function(){
-	return gulp.src(config.sourceDir+'/js/*')
-	.pipe(concat('scripts.js'))
-	.pipe(uglify({mangle:false}))
-	.pipe(gulp.dest(config.publicDir+'/js'));
+	gulp.task(task, require('./tasks/' + task));
 });
 
 gulp.task('default',function(callback){
