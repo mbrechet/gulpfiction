@@ -209,7 +209,49 @@
             </executions>
         </plugin>
 
+        <!-- scripts -->
+        <plugin>
+            <groupId>net.tqh.plugins</groupId>
+            <artifactId>uglifyjs-maven-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+                <execution>
+                    <id>uglify-js</id>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>uglify</goal>
+                    </goals>
+                    <configuration>
+                        <skip>false</skip>
+                        <sourceDirectory>${basedir}/src/js</sourceDirectory>
+                        <outputDirectory>${basedir}/client/js</outputDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 
+        <!--packagin -->
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.3</version>
+          <executions>
+            <execution>
+              <id>release-assembly</id>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <finalName>gulpfiction_${version}</finalName>
+            <appendAssemblyId>false</appendAssemblyId>
+            <descriptors>
+              <descriptor>${basedir}/clientAssembly.xml</descriptor>
+            </descriptors>
+            <outputDirectory>${basedir}/release/</outputDirectory>
+          </configuration>
+        </plugin>
 
 
     </plugins>

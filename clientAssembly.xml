@@ -1,0 +1,18 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>dir</format>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>client</directory>
+            <outputDirectory>/</outputDirectory>
+           
+            <includes>
+                <include>*/**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>
