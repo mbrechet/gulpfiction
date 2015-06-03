@@ -10,6 +10,8 @@
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "errorhandler": "^1.1.1",
+    "gulp-gzip": "^1.1.0",
+    "gulp-tar": "^1.4.0",
     "gulp-util": "^3.0.5",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",

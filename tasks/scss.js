@@ -8,6 +8,5 @@ module.exports = function () {
 			indentSynthax:true,
 			errLogToConsole:true
 		}))
-		.pipe(gulp.dest(global.dir.client + '/css'))
-		.pipe(gulp.dest(global.dir.release + '/css'));
+		.pipe(gulp.dest(global.dir.client + '/css'));
 };

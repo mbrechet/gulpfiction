@@ -25,7 +25,8 @@ var tasks = [
 	'external-lib', 
 	'external-plugins', 
 	'image',
-	'js-build'
+	'js-build',
+	'release-assembly'
 ];
 
 //create a task directly in gulpfile
@@ -46,12 +47,15 @@ tasks.forEach(function (task) {
 
 gulp.task('default',function(callback){
 	runSequence(
-	'clean',
-	'image',
-	'html', 
-	'scss', 
-	'fonts', 
-	'external-lib', 
-	'external-plugins', 
-	'js-build', callback);
+		'clean',
+		'image',
+		'html', 
+		'scss', 
+		'fonts', 
+		'external-lib', 
+		'external-plugins', 
+		'js-build', 
+		'release-assembly',
+		callback
+	);
 });
