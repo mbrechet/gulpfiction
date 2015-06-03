@@ -168,46 +168,6 @@
       </plugin>
 
       <!-- build lib js -->
-        <plugin>
-            <groupId>net.tqh.plugins</groupId>
-            <artifactId>uglifyjs-maven-plugin</artifactId>
-            <version>1.0</version>
-            <executions>
-                <execution>
-                    <id>uglify-lib</id>
-                    <phase>compile</phase>
-                    <goals>
-                        <goal>uglify</goal>
-                    </goals>
-                    <configuration>
-                        <skip>false</skip>
-                        <sourceDirectory>${basedir}/src/js/libs</sourceDirectory>
-                        <outputDirectory>${basedir}/client/js/libs</outputDirectory>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-
-         <!-- build plugins js -->
-        <plugin>
-            <groupId>net.tqh.plugins</groupId>
-            <artifactId>uglifyjs-maven-plugin</artifactId>
-            <version>1.0</version>
-            <executions>
-                <execution>
-                    <id>uglify-plugin</id>
-                    <phase>compile</phase>
-                    <goals>
-                        <goal>uglify</goal>
-                    </goals>
-                    <configuration>
-                        <skip>false</skip>
-                        <sourceDirectory>${basedir}/src/js/plugins</sourceDirectory>
-                        <outputDirectory>${basedir}/client/js/plugins</outputDirectory>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
 
         <!-- scripts -->
         <plugin>
