@@ -45,6 +45,7 @@ tasks.forEach(function (task) {
 	gulp.task(task, require('./tasks/' + task));
 });
 
+
 gulp.task('default',function(callback){
 	runSequence(
 		'clean',
@@ -59,3 +60,5 @@ gulp.task('default',function(callback){
 		callback
 	);
 });
+
+gulp.task('faketask', require('./tasks/faketask'));
