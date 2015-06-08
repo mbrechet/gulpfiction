@@ -62,3 +62,17 @@ gulp.task('default',function(callback){
 });
 
 gulp.task('faketask', require('./tasks/faketask'));
+
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+gulp.task('watch', function () {	
+	browserSync({
+		notify: false,
+		logPrefix: 'Watching GulpFiction : ',
+		server: './server'
+	});
+
+	// Watch files for changes & reload
+	gulp.watch([global.dir.sources + '/**/*.html'], reload);
+	gulp.watch([global.dir.sources +  '/**/*.{scss,css}'], ['scss', reload]);
+});

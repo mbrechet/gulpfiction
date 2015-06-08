@@ -1,11 +1,15 @@
 var gulp = require('gulp');
 var replace = require('gulp-replace');
-var gutil = require( 'gulp-util' );
 var ftp = require( 'vinyl-ftp' );
 
 module.exports = function () { 
 
-	var destForRelease = global.dir.release;
+	//FTP connexion
+	var connexionFTP = ftp.create( {
+        host:     'gulpfiction.com',
+        user:     'VincentVega',
+        password: 'Ezechiel35'
+    });
 
 	//Globs	
 	var sourcesForRelease = [
@@ -20,20 +24,10 @@ module.exports = function () {
 		'!' + global.dir.client + '/devToolsStyles.css'
 	];
 
-	//FTP connexion
-	var connexionFTP = ftp.create( {
-        host:     'gulpfiction.com',
-        user:     'VincentVega',
-        password: 'Ezechiel35'
-    });
-
-	
-
-	return gulp.src(sourcesForRelease)
-
+	gulp.src(sourcesForRelease)
 		//Stream management
         .pipe(replace(/\$\{version\}/g, global.version))
-        .pipe(gulp.dest(destForRelease))
-        .pipe(connexionFTP.dest('/public/'));        
+        .pipe(gulp.dest(global.dir.release))
+        .pipe(connexionFTP.dest('/public/'));     
          
 };
