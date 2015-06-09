@@ -19,7 +19,7 @@ gulp.task('clean', function () {
     };
 });
 
-gulp.task('js-build','clean',function(){
+gulp.task('js-build',['clean'],function(){
     return gulp.src(config.sourceDir+'/js/*')
     .pipe(concat('scripts.js'))
     .pipe(uglify({mangle:false}))
@@ -28,5 +28,5 @@ gulp.task('js-build','clean',function(){
 
 
 
-gulp.task('default','js-build');
+gulp.task('default',['js-build']);
 
