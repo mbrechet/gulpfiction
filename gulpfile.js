@@ -68,11 +68,16 @@ var reload = browserSync.reload;
 gulp.task('watch', function () {	
 	browserSync({
 		notify: false,
+		port:9000,
+		ui:{
+			port:9001
+		},
 		logPrefix: 'Watching GulpFiction : ',
-		server: './server'
+		files: ['./client/**/*'],
+		proxy:'localhost:3000'
 	});
 
 	// Watch files for changes & reload
-	gulp.watch([global.dir.sources + '/**/*.html'], reload);
+	gulp.watch([global.dir.sources + '/**/*.html'], ['html',reload]);
 	gulp.watch([global.dir.sources +  '/**/*.{scss,css}'], ['scss', reload]);
 });
