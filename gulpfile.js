@@ -8,7 +8,6 @@ var concat = require('gulp-concat');
 var gutil = require('gulp-util');
 var runSequence = require('run-sequence');
 
-console.log(__dirname);
 global.dir = {
 	bootstrap: path.join(__dirname, 'node_modules', 'bootstrap-sass'),
 	client: path.join(__dirname, 'client'),
@@ -62,22 +61,6 @@ gulp.task('default',function(callback){
 });
 
 gulp.task('faketask', require('./tasks/faketask'));
+gulp.task('watch-webfiles', require('./tasks/watch-webfiles'));
 
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-gulp.task('watch', function () {	
-	browserSync({
-		notify: false,
-		port:9000,
-		ui:{
-			port:9001
-		},
-		logPrefix: 'Watching GulpFiction : ',
-		files: ['./client/**/*'],
-		proxy:'localhost:3000'
-	});
 
-	// Watch files for changes & reload
-	gulp.watch([global.dir.sources + '/**/*.html'], ['html',reload]);
-	gulp.watch([global.dir.sources +  '/**/*.{scss,css}'], ['scss', reload]);
-});
