@@ -30,7 +30,7 @@ gulp.task('clean', function () {
 });
 
 //OR check all individual task-file in tasks folder, and create a gulp-task with it
-var tasks = [/*	'clean',*/'html', 'scss', 'fonts', 'external-lib', 'external-plugins', 'image','js-build','release-assembly'];
+var tasks = ['sound','html', 'scss', 'fonts', 'external-lib', 'external-plugins', 'image','js-build','release-assembly'];
 tasks.forEach(function (task) {
 	gulp.task(task, require('./tasks/' + task));
 });
@@ -38,6 +38,7 @@ tasks.forEach(function (task) {
 //Default task : run a sequence of task
 gulp.task('default',function(callback){
 	runSequence(
+		'sound',
 		'clean',
 		['image','html'], 
 		'scss', 

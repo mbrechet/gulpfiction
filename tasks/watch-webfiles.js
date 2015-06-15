@@ -12,5 +12,5 @@ module.exports = function () {
 
 	// Watch files for changes & reload
 	gulp.watch([global.dir.sources + '/**/*.html'], ['html', reload]);
-	//gulp.watch([global.dir.sources + '/**/*.scss'], ['scss', reload]);
+	gulp.watch([global.dir.sources + '/**/*.scss'], ['scss', reload]);
 };
